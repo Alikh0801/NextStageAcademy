@@ -1,5 +1,32 @@
+import dns from 'node:dns'
 import mongoose, { type Mongoose } from 'mongoose'
 import { MongoClient, type Db } from 'mongodb'
+
+/**
+ * Windows-da Node-un DNS resolver-i registry-dəki `NameServer` sahəsini oxuyur.
+ * DNS router tərəfindən DHCP ilə verilirsə həmin sahə boş qalır (dəyər yalnız
+ * `DhcpNameServer`-də olur) və resolver `127.0.0.1`-ə düşür. Nəticədə
+ * `mongodb+srv://` üçün lazım olan SRV sorğusu ECONNREFUSED verir — halbuki
+ * əməliyyat sistemi eyni host-u problemsiz həll edir.
+ *
+ * `dns` və `dns.promises` AYRI server siyahısı saxlayır, ona görə ikisini də
+ * təyin etmək lazımdır. MongoDB sürücüsü məhz `dns.promises`-dən istifadə edir.
+ *
+ * Yalnız lokal işləyəndə və yalnız bu konkret səhv konfiqurasiya aşkarlananda
+ * müdaxilə edirik. Vercel-də DNS düzgün qurulub, ona görə istehsalda toxunmuruq.
+ */
+if (process.env.NODE_ENV !== 'production') {
+  const FALLBACK_DNS = ['1.1.1.1', '8.8.8.8']
+  const isBroken = (servers: string[]) =>
+    servers.length === 1 && servers[0] === '127.0.0.1'
+
+  if (isBroken(dns.getServers())) {
+    dns.setServers(FALLBACK_DNS)
+  }
+  if (isBroken(dns.promises.getServers())) {
+    dns.promises.setServers(FALLBACK_DNS)
+  }
+}
 
 const MONGODB_URI = process.env.DATABASE_URL
 
