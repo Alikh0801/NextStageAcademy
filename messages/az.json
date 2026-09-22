@@ -1,0 +1,123 @@
+{
+  "Meta": {
+    "siteName": "NextStage Academy",
+    "tagline": "Təlimlər, karyera dəstəyi və faydalı məlumatlarla daha güclü gələcəyə.",
+    "description": "Təlimlər, karyera məsləhətləri və faydalı məzmunlarla peşəkar inkişaf yolunda yanındayıq."
+  },
+  "Nav": {
+    "home": "Ana səhifə",
+    "about": "Haqqımızda",
+    "courses": "Təlimlər",
+    "career": "CV və Karyera dəstəyi",
+    "blog": "Bloq",
+    "contact": "Əlaqə",
+    "signIn": "Giriş / Qeydiyyat",
+    "account": "Hesabım",
+    "signOut": "Çıxış"
+  },
+  "Hero": {
+    "eyebrow": "NÖVBƏTİ ADDIM",
+    "title": "Karyeranı bizimlə qur!",
+    "subtitle": "Təlimlər, karyera məsləhətləri və faydalı məzmunlarla peşəkar inkişaf yolunda yanındayıq.",
+    "primaryCta": "Təlimlərə bax",
+    "secondaryCta": "Haqqımızda",
+    "badgeGrowth": "Peşəkar inkişaf",
+    "badgeCommunity": "Güclü icma",
+    "badgeFuture": "Daha yaxşı gələcək"
+  },
+  "Courses": {
+    "featuredTitle": "Populyar təlimlərimiz",
+    "featuredSubtitle": "Bacarıqlarını inkişaf etdir, gələcəyinə investisiya et!",
+    "viewAll": "Hamısına bax",
+    "allTitle": "Təlimlər",
+    "empty": "Hələlik təlim əlavə edilməyib.",
+    "duration": "{hours} saat",
+    "price": "{price} ₼",
+    "free": "Ödənişsiz",
+    "level": "Səviyyə",
+    "levelBEGINNER": "Başlanğıc",
+    "levelINTERMEDIATE": "Orta",
+    "levelADVANCED": "Qabaqcıl",
+    "startDate": "Başlama tarixi",
+    "instructor": "Təlimçi",
+    "enroll": "Müraciət et"
+  },
+  "Enrollment": {
+    "title": "Təlimə müraciət",
+    "fullName": "Ad və soyad",
+    "email": "E-poçt",
+    "phone": "Telefon",
+    "note": "Əlavə qeyd",
+    "submit": "Müraciəti göndər",
+    "success": "Müraciətin qəbul olundu. Tezliklə səninlə əlaqə saxlayacağıq.",
+    "duplicate": "Bu təlimə artıq müraciət etmisən.",
+    "error": "Müraciət göndərilmədi. Bir az sonra yenidən yoxla."
+  },
+  "Blog": {
+    "title": "Bloq",
+    "subtitle": "Faydalı məqalələr, tövsiyələr və karyera hekayələri.",
+    "viewAll": "Hamısına bax",
+    "empty": "Hələlik yazı əlavə edilməyib.",
+    "readMore": "Oxu"
+  },
+  "Career": {
+    "title": "CV və Karyera dəstəyi",
+    "subtitle": "Peşəkar CV və karyera məsləhət xidmətləri.",
+    "uploadCv": "CV faylını yüklə",
+    "submit": "Müraciət göndər"
+  },
+  "Contact": {
+    "bannerTitle": "Sualın var? Bizə yaz!",
+    "bannerSubtitle": "Karyera və təlimlərlə bağlı suallarınızı bizimlə bölüşün.",
+    "bannerCta": "Əlaqə saxla",
+    "title": "Əlaqə",
+    "fullName": "Ad və soyad",
+    "email": "E-poçt",
+    "phone": "Telefon",
+    "subject": "Mövzu",
+    "message": "Mesajın",
+    "submit": "Göndər",
+    "success": "Mesajın göndərildi. Təşəkkür edirik!",
+    "error": "Mesaj göndərilmədi. Bir az sonra yenidən yoxla."
+  },
+  "Auth": {
+    "signInTitle": "Hesabına daxil ol",
+    "signUpTitle": "Qeydiyyatdan keç",
+    "name": "Ad və soyad",
+    "email": "E-poçt",
+    "password": "Parol",
+    "phone": "Telefon",
+    "signIn": "Daxil ol",
+    "signUp": "Qeydiyyat",
+    "noAccount": "Hesabın yoxdur?",
+    "hasAccount": "Artıq hesabın var?",
+    "invalidCredentials": "E-poçt və ya parol yanlışdır.",
+    "emailTaken": "Bu e-poçt artıq qeydiyyatdan keçib."
+  },
+  "Account": {
+    "title": "Hesabım",
+    "myEnrollments": "Müraciətlərim",
+    "empty": "Hələ heç bir təlimə müraciət etməmisən.",
+    "statusPENDING": "Gözləyir",
+    "statusAPPROVED": "Təsdiqlənib",
+    "statusREJECTED": "Rədd edilib"
+  },
+  "Footer": {
+    "quickLinks": "Sürətli keçidlər",
+    "usefulLinks": "Faydalı linklər",
+    "contactUs": "Bizimlə əlaqə",
+    "faq": "Tez-tez verilən suallar",
+    "terms": "Şərtlər və qaydalar",
+    "privacy": "Məxfilik siyasəti",
+    "rights": "© {year}. Bütün hüquqlar qorunur.",
+    "signature": "Next Stop Again..."
+  },
+  "Common": {
+    "loading": "Yüklənir...",
+    "notFound": "Səhifə tapılmadı",
+    "notFoundHint": "Axtardığın səhifə mövcud deyil və ya köçürülüb.",
+    "backHome": "Ana səhifəyə qayıt",
+    "required": "Bu xana doldurulmalıdır",
+    "invalidEmail": "E-poçt ünvanı düzgün deyil"
+  }
+}

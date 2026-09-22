@@ -1,0 +1,123 @@
+{
+  "Meta": {
+    "siteName": "NextStage Academy",
+    "tagline": "A stronger future through training, career support and useful resources.",
+    "description": "Training, career guidance and useful content to support your professional growth."
+  },
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "courses": "Courses",
+    "career": "CV & Career Support",
+    "blog": "Blog",
+    "contact": "Contact",
+    "signIn": "Sign in / Sign up",
+    "account": "My account",
+    "signOut": "Sign out"
+  },
+  "Hero": {
+    "eyebrow": "THE NEXT STEP",
+    "title": "Build your career with us!",
+    "subtitle": "Training, career guidance and useful content to support your professional growth.",
+    "primaryCta": "Browse courses",
+    "secondaryCta": "About us",
+    "badgeGrowth": "Professional growth",
+    "badgeCommunity": "Strong community",
+    "badgeFuture": "A better future"
+  },
+  "Courses": {
+    "featuredTitle": "Popular courses",
+    "featuredSubtitle": "Grow your skills, invest in your future!",
+    "viewAll": "View all",
+    "allTitle": "Courses",
+    "empty": "No courses have been added yet.",
+    "duration": "{hours} hours",
+    "price": "{price} ₼",
+    "free": "Free",
+    "level": "Level",
+    "levelBEGINNER": "Beginner",
+    "levelINTERMEDIATE": "Intermediate",
+    "levelADVANCED": "Advanced",
+    "startDate": "Start date",
+    "instructor": "Instructor",
+    "enroll": "Apply now"
+  },
+  "Enrollment": {
+    "title": "Course application",
+    "fullName": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "note": "Additional note",
+    "submit": "Send application",
+    "success": "Your application has been received. We will contact you shortly.",
+    "duplicate": "You have already applied to this course.",
+    "error": "The application could not be sent. Please try again later."
+  },
+  "Blog": {
+    "title": "Blog",
+    "subtitle": "Useful articles, tips and career stories.",
+    "viewAll": "View all",
+    "empty": "No posts have been added yet.",
+    "readMore": "Read more"
+  },
+  "Career": {
+    "title": "CV & Career Support",
+    "subtitle": "Professional CV writing and career consulting services.",
+    "uploadCv": "Upload your CV",
+    "submit": "Send request"
+  },
+  "Contact": {
+    "bannerTitle": "Got a question? Write to us!",
+    "bannerSubtitle": "Share your questions about careers and training with us.",
+    "bannerCta": "Get in touch",
+    "title": "Contact",
+    "fullName": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "subject": "Subject",
+    "message": "Your message",
+    "submit": "Send",
+    "success": "Your message has been sent. Thank you!",
+    "error": "The message could not be sent. Please try again later."
+  },
+  "Auth": {
+    "signInTitle": "Sign in to your account",
+    "signUpTitle": "Create an account",
+    "name": "Full name",
+    "email": "Email",
+    "password": "Password",
+    "phone": "Phone",
+    "signIn": "Sign in",
+    "signUp": "Sign up",
+    "noAccount": "Do not have an account?",
+    "hasAccount": "Already have an account?",
+    "invalidCredentials": "Incorrect email or password.",
+    "emailTaken": "This email is already registered."
+  },
+  "Account": {
+    "title": "My account",
+    "myEnrollments": "My applications",
+    "empty": "You have not applied to any course yet.",
+    "statusPENDING": "Pending",
+    "statusAPPROVED": "Approved",
+    "statusREJECTED": "Rejected"
+  },
+  "Footer": {
+    "quickLinks": "Quick links",
+    "usefulLinks": "Useful links",
+    "contactUs": "Contact us",
+    "faq": "Frequently asked questions",
+    "terms": "Terms and conditions",
+    "privacy": "Privacy policy",
+    "rights": "© {year}. All rights reserved.",
+    "signature": "Next Stop Again..."
+  },
+  "Common": {
+    "loading": "Loading...",
+    "notFound": "Page not found",
+    "notFoundHint": "The page you are looking for does not exist or has been moved.",
+    "backHome": "Back to home",
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address"
+  }
+}

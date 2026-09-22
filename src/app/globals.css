@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  /* Əsas bənövşəyi — düymələr, linklər, vurğular */
+  --color-brand-50: #f6f4fc;
+  --color-brand-100: #ece7f8;
+  --color-brand-200: #dcd3f3;
+  --color-brand-300: #c3b3e9;
+  --color-brand-400: #a68cdc;
+  --color-brand-500: #8b68cd;
+  --color-brand-600: #7a52c0;
+  --color-brand-700: #6941a8;
+  --color-brand-800: #58388a;
+  --color-brand-900: #4a3070;
+
+  /* Neytral — mətn, sərhəd, fon */
+  --color-ink-50: #f7f7fa;
+  --color-ink-100: #eeeef3;
+  --color-ink-200: #dcdbe5;
+  --color-ink-300: #bbb9ca;
+  --color-ink-400: #8a87a0;
+  --color-ink-500: #6b6880;
+  --color-ink-600: #514e64;
+  --color-ink-700: #3d3b4d;
+  --color-ink-800: #2d2a3e;
+  --color-ink-900: #211e32;
+  --color-ink-950: #16142a;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-poppins), var(--font-inter), ui-sans-serif, sans-serif;
+
+  --radius-card: 1rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: var(--color-ink-800);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--color-ink-900);
+  }
+}
+
+@layer components {
+  /* Səhifə boyu təkrarlanan mərkəzi sütun */
+  .container-page {
+    width: 100%;
+    max-width: 72rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+}
