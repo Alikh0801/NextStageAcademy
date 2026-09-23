@@ -13,7 +13,10 @@
     "contact": "Əlaqə",
     "signIn": "Giriş / Qeydiyyat",
     "account": "Hesabım",
-    "signOut": "Çıxış"
+    "signOut": "Çıxış",
+    "openMenu": "Menyunu aç",
+    "closeMenu": "Menyunu bağla",
+    "language": "Dil"
   },
   "Hero": {
     "eyebrow": "NÖVBƏTİ ADDIM",
@@ -23,7 +26,8 @@
     "secondaryCta": "Haqqımızda",
     "badgeGrowth": "Peşəkar inkişaf",
     "badgeCommunity": "Güclü icma",
-    "badgeFuture": "Daha yaxşı gələcək"
+    "badgeFuture": "Daha yaxşı gələcək",
+    "imageAlt": "Noutbuk, kitablar və qeyd dəftəri olan iş masası"
   },
   "Courses": {
     "featuredTitle": "Populyar təlimlərimiz",
@@ -118,6 +122,7 @@
     "notFoundHint": "Axtardığın səhifə mövcud deyil və ya köçürülüb.",
     "backHome": "Ana səhifəyə qayıt",
     "required": "Bu xana doldurulmalıdır",
-    "invalidEmail": "E-poçt ünvanı düzgün deyil"
+    "invalidEmail": "E-poçt ünvanı düzgün deyil",
+    "comingSoon": "Bu səhifə hazırlanır."
   }
 }

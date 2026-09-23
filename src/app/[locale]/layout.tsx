@@ -3,6 +3,7 @@ import { Inter, Poppins } from 'next/font/google'
 import { notFound } from 'next/navigation'
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
+import { Header } from '@/components/layout/Header'
 import { routing } from '@/i18n/routing'
 import '../globals.css'
 
@@ -58,7 +59,10 @@ export default async function LocaleLayout({
       className={`${inter.variable} ${poppins.variable} h-full`}
     >
       <body className="flex min-h-full flex-col">
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <Header />
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   )

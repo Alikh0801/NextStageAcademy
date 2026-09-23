@@ -13,7 +13,10 @@
     "contact": "Contact",
     "signIn": "Sign in / Sign up",
     "account": "My account",
-    "signOut": "Sign out"
+    "signOut": "Sign out",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language"
   },
   "Hero": {
     "eyebrow": "THE NEXT STEP",
@@ -23,7 +26,8 @@
     "secondaryCta": "About us",
     "badgeGrowth": "Professional growth",
     "badgeCommunity": "Strong community",
-    "badgeFuture": "A better future"
+    "badgeFuture": "A better future",
+    "imageAlt": "A desk with a laptop, books and a notebook"
   },
   "Courses": {
     "featuredTitle": "Popular courses",
@@ -118,6 +122,7 @@
     "notFoundHint": "The page you are looking for does not exist or has been moved.",
     "backHome": "Back to home",
     "required": "This field is required",
-    "invalidEmail": "Invalid email address"
+    "invalidEmail": "Invalid email address",
+    "comingSoon": "This page is under construction."
   }
 }
