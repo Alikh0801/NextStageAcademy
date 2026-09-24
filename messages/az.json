@@ -98,5 +98,19 @@
     "required": "Bu xana doldurulmalıdır",
     "invalidEmail": "E-poçt ünvanı düzgün deyil",
     "comingSoon": "Bu səhifə hazırlanır."
+  },
+  "Categories": {
+    "hrTitle": "HR",
+    "hrText": "İnsan resursları həlləri",
+    "excelTitle": "Excel",
+    "excelText": "Praktik bacarıqlar",
+    "softTitle": "Soft Skills",
+    "softText": "Şəxsi inkişaf",
+    "coursesTitle": "Təlimlər",
+    "coursesText": "İştirak et, fərq yarat",
+    "careerTitle": "CV və Karyera",
+    "careerText": "Karyeranı planlaşdır",
+    "resourcesTitle": "Faydalı Məlumatlar",
+    "resourcesText": "Məqalə və resurslar"
   }
 }

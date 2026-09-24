@@ -98,5 +98,19 @@
     "required": "This field is required",
     "invalidEmail": "Invalid email address",
     "comingSoon": "This page is under construction."
+  },
+  "Categories": {
+    "hrTitle": "HR",
+    "hrText": "Human resources solutions",
+    "excelTitle": "Excel",
+    "excelText": "Practical skills",
+    "softTitle": "Soft Skills",
+    "softText": "Personal development",
+    "coursesTitle": "Courses",
+    "coursesText": "Take part, make a difference",
+    "careerTitle": "CV & Career",
+    "careerText": "Plan your career",
+    "resourcesTitle": "Useful Resources",
+    "resourcesText": "Articles and resources"
   }
 }

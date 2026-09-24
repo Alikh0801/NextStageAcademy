@@ -98,5 +98,19 @@
     "required": "Поле обязательно для заполнения",
     "invalidEmail": "Неверный адрес эл. почты",
     "comingSoon": "Эта страница в разработке."
+  },
+  "Categories": {
+    "hrTitle": "HR",
+    "hrText": "Решения для управления персоналом",
+    "excelTitle": "Excel",
+    "excelText": "Практические навыки",
+    "softTitle": "Soft Skills",
+    "softText": "Личностное развитие",
+    "coursesTitle": "Курсы",
+    "coursesText": "Участвуй и меняй",
+    "careerTitle": "CV и карьера",
+    "careerText": "Планируй карьеру",
+    "resourcesTitle": "Полезные материалы",
+    "resourcesText": "Статьи и ресурсы"
   }
 }
