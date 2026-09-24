@@ -3,7 +3,7 @@
 // Parametrlər src/lib/admin/password.ts ilə eyni olmalıdır.
 import { randomBytes, scryptSync } from 'node:crypto'
 
-const MIN_LENGTH = 12
+const MIN_LENGTH = 8
 const password = process.argv[2]
 
 if (!password || password.length < MIN_LENGTH) {
