@@ -11,10 +11,12 @@ import mongoose, { type Mongoose } from 'mongoose'
  * `dns` və `dns.promises` AYRI server siyahısı saxlayır, ona görə ikisini də
  * təyin etmək lazımdır. MongoDB sürücüsü məhz `dns.promises`-dən istifadə edir.
  *
- * Yalnız lokal işləyəndə və yalnız bu konkret səhv konfiqurasiya aşkarlananda
- * müdaxilə edirik. Vercel-də DNS düzgün qurulub, ona görə istehsalda toxunmuruq.
+ * Şərt kimi `NODE_ENV`-ə baxmırıq: `next build` onu `production` edir, yəni
+ * lokal build-lər bazaya çıxa bilmir və məzmun səhifəyə boş halda bişirilirdi.
+ * Əsl qoruyucu aşağıdakı aşkarlamanın özüdür — Vercel-in DNS-i `127.0.0.1`
+ * qaytarmadığına görə orada bu blok onsuz da işə düşmür.
  */
-if (process.env.NODE_ENV !== 'production') {
+{
   const FALLBACK_DNS = ['1.1.1.1', '8.8.8.8']
   const isBroken = (servers: string[]) =>
     servers.length === 1 && servers[0] === '127.0.0.1'

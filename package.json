@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "admin:hash": "node scripts/admin-password-hash.mjs"
+    "admin:hash": "node scripts/admin-password-hash.mjs",
+    "seed:blog": "node --env-file=.env scripts/seed-blog.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.47.0",
