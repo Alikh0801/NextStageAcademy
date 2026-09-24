@@ -16,25 +16,18 @@ export async function Hero() {
     // `isolate` ayrıca yığın konteksti yaradır — mənfi z-index-lər
     // bölmədən kənara çıxmır və header-in altına düşmür.
     <section className="relative isolate flex min-h-[540px] items-center overflow-hidden bg-white lg:min-h-[660px]">
+      {/*
+        Sırf dekorativ fon: abstrakt qradiyentdir, heç bir obyekt daşımır.
+        Ona görə `alt` boşdur — ekran oxuyucusu onu ötürsün. Şəkil hər yerində
+        açıq tonda olduğuna görə mətnin arxasına pərdə çəkmək lazım deyil.
+      */}
       <Image
-        src="/hero/hero.png"
-        alt={t('imageAlt')}
+        src="/hero/fone.jpeg"
+        alt=""
         fill
         priority
         sizes="100vw"
-        // Dar ekranlarda şəkil üfüqi kəsilir; `object-left` səhnəni yox,
-        // sol tərəfdəki açıq sahəni saxlayır ki, mətn oxunaqlı qalsın.
-        className="-z-20 object-cover object-left lg:object-center"
-      />
-
-      {/*
-        Yalnız dar ekranlarda lazımdır: orada şəkil üfüqi kəsilir və mətnin
-        arxasına nə düşəcəyi əvvəlcədən bilinmir. lg-dən yuxarı kəsim olmur,
-        şəklin sol tərəfi onsuz da açıqdır — orada pərdə şəkli solğunlaşdırırdı.
-      */}
-      <div
-        aria-hidden
-        className="absolute inset-0 -z-10 bg-gradient-to-r from-white/90 via-white/50 to-transparent lg:hidden"
+        className="-z-10 object-cover object-center"
       />
 
       <div className="container-page">
