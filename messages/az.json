@@ -11,9 +11,6 @@
     "career": "CV və Karyera dəstəyi",
     "blog": "Bloq",
     "contact": "Əlaqə",
-    "signIn": "Giriş / Qeydiyyat",
-    "account": "Hesabım",
-    "signOut": "Çıxış",
     "openMenu": "Menyunu aç",
     "closeMenu": "Menyunu bağla",
     "language": "Dil"
@@ -83,28 +80,6 @@
     "submit": "Göndər",
     "success": "Mesajın göndərildi. Təşəkkür edirik!",
     "error": "Mesaj göndərilmədi. Bir az sonra yenidən yoxla."
-  },
-  "Auth": {
-    "signInTitle": "Hesabına daxil ol",
-    "signUpTitle": "Qeydiyyatdan keç",
-    "name": "Ad və soyad",
-    "email": "E-poçt",
-    "password": "Parol",
-    "phone": "Telefon",
-    "signIn": "Daxil ol",
-    "signUp": "Qeydiyyat",
-    "noAccount": "Hesabın yoxdur?",
-    "hasAccount": "Artıq hesabın var?",
-    "invalidCredentials": "E-poçt və ya parol yanlışdır.",
-    "emailTaken": "Bu e-poçt artıq qeydiyyatdan keçib."
-  },
-  "Account": {
-    "title": "Hesabım",
-    "myEnrollments": "Müraciətlərim",
-    "empty": "Hələ heç bir təlimə müraciət etməmisən.",
-    "statusPENDING": "Gözləyir",
-    "statusAPPROVED": "Təsdiqlənib",
-    "statusREJECTED": "Rədd edilib"
   },
   "Footer": {
     "quickLinks": "Sürətli keçidlər",

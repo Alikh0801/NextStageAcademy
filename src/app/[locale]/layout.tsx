@@ -1,24 +1,11 @@
 import type { Metadata } from 'next'
-import { Inter, Poppins } from 'next/font/google'
 import { notFound } from 'next/navigation'
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { Header } from '@/components/layout/Header'
 import { routing } from '@/i18n/routing'
+import { inter, poppins } from '../fonts'
 import '../globals.css'
-
-const inter = Inter({
-  variable: '--font-inter',
-  subsets: ['latin', 'latin-ext', 'cyrillic'],
-  display: 'swap',
-})
-
-const poppins = Poppins({
-  variable: '--font-poppins',
-  subsets: ['latin', 'latin-ext'],
-  weight: ['600', '700'],
-  display: 'swap',
-})
 
 /** Üç dilin hamısını build zamanı əvvəlcədən hazırlayır. */
 export function generateStaticParams() {

@@ -1,7 +1,8 @@
 # NextStage Academy
 
 Təhsil proqramı platforması: təlim kataloqu, təlimlərə müraciət, bloq,
-CV və karyera dəstəyi, istifadəçi hesabı və admin panel.
+CV və karyera dəstəyi və admin panel. Ziyarətçilər üçün giriş/qeydiyyat
+yoxdur — müraciətlər qonaq kimi göndərilir. Giriş yalnız admin üçündür (`/admin`).
 
 ## Stack
 
@@ -10,7 +11,6 @@ CV və karyera dəstəyi, istifadəçi hesabı və admin panel.
 | Framework | Next.js 16 (App Router) + TypeScript |
 | Stil | Tailwind CSS 4 |
 | Baza | MongoDB Atlas + Mongoose |
-| Auth | better-auth (e-poçt/parol, `USER` / `ADMIN` rolları) |
 | Çoxdillilik | next-intl — `az` (defolt), `ru`, `en` |
 | Deploy | Vercel |
 
@@ -35,11 +35,17 @@ mongodb+srv://istifadeci:parol@cluster.xxxxx.mongodb.net/nextstage?retryWrites=t
 
 Baza adı yazılmasa driver hər şeyi defolt `test` bazasına yazar.
 
-`BETTER_AUTH_SECRET` üçün təsadüfi açar:
+### Admin girişi
+
+Admin hesabı bazada deyil, env dəyişənlərində saxlanılır:
 
 ```bash
-node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"
+npm run admin:hash -- 'guclu-parol'   # → ADMIN_PASSWORD_HASH
+node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"   # → ADMIN_SESSION_SECRET
 ```
+
+`ADMIN_EMAIL` ilə birlikdə `.env`-ə və Vercel-ə əlavə et. Giriş səhifəsi:
+`/admin/login`.
 
 ## Əmrlər
 
@@ -48,6 +54,7 @@ npm run dev     # lokal server
 npm run build   # istehsal build-i
 npm run lint    # ESLint
 npx tsc --noEmit  # tip yoxlaması
+npm run admin:hash -- 'parol'  # admin parolunun hash-i
 ```
 
 ## Struktur
@@ -55,12 +62,12 @@ npx tsc --noEmit  # tip yoxlaması
 ```
 src/
   app/[locale]/       səhifələr — üç dil üçün SSG
-  app/api/auth/       better-auth route handler
+  app/admin/          admin panel — ayrıca root layout, yalnız az dilində
   i18n/               routing (dilə görə tərcümə olunan yollar), navigation, request
-  lib/db.ts           Mongoose + native MongoClient, serverless üçün keşlənmiş
-  lib/auth.ts         better-auth konfiqi
-  models/             Category · Course · Enrollment · Post · Message · Faq · User
-  proxy.ts            next-intl middleware (Next 16-da `middleware` yox, `proxy`)
+  lib/db.ts           Mongoose bağlantısı, serverless üçün keşlənmiş
+  lib/admin/          admin sessiyası, parol yoxlaması, cəhd limiti
+  models/             Category · Course · Enrollment · Post · Message · Faq · LoginAttempt
+  proxy.ts            next-intl + /admin qoruması (Next 16-da `middleware` yox, `proxy`)
 messages/             az.json · ru.json · en.json
 ```
 
@@ -74,9 +81,11 @@ hər sahə `{ az, ru, en }` şəklindədir (`src/models/shared.ts`). Dil boşdur
 `/telimler/excel-telimi` · `/ru/kursy/excel-telimi` · `/en/courses/excel-telimi`.
 Yolların siyahısı `src/i18n/routing.ts` faylındadır.
 
-**İstifadəçi qeydlərini better-auth idarə edir** (`user`, `session`, `account`,
-`verification` kolleksiyaları). Mongoose `User` modeli yalnız oxumaq üçündür —
-yazma əməliyyatlarını better-auth API-si üzərindən et.
+**Admin sessiyası bazada saxlanmır.** Cookie-də bitmə vaxtı və onun HMAC
+imzası durur (7 gün). `ADMIN_SESSION_SECRET` və ya parol dəyişəndə bütün
+açıq sessiyalar etibarsız olur. Proxy yalnız ilkin süzgəcdir — qorunan hər
+səhifə və Server Action `verifyAdmin()`-i özü çağırmalıdır. Bir IP-dən 15
+dəqiqədə 5 uğursuz cəhddən sonra giriş bloklanır (`LoginAttempt`).
 
 **Windows-da DNS.** Node-un resolver-i registry-dəki `NameServer` sahəsini
 oxuyur. DNS DHCP ilə verilirsə bu sahə boş qalır və resolver `127.0.0.1`-ə
