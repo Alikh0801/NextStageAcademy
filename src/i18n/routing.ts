@@ -47,21 +47,6 @@ export const routing = defineRouting({
       ru: '/kontakty',
       en: '/contact',
     },
-    '/giris': {
-      az: '/giris',
-      ru: '/vhod',
-      en: '/sign-in',
-    },
-    '/qeydiyyat': {
-      az: '/qeydiyyat',
-      ru: '/registraciya',
-      en: '/sign-up',
-    },
-    '/hesabim': {
-      az: '/hesabim',
-      ru: '/kabinet',
-      en: '/account',
-    },
   },
 })
 

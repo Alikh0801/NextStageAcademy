@@ -6,8 +6,6 @@ export type EnrollmentStatus = (typeof ENROLLMENT_STATUSES)[number]
 export interface IEnrollment {
   _id: Types.ObjectId
   course: Types.ObjectId
-  /** Qonaq da müraciət edə bilər, ona görə istifadəçi məcburi deyil. */
-  user?: Types.ObjectId
   fullName: string
   email: string
   phone: string
@@ -20,7 +18,6 @@ export interface IEnrollment {
 const EnrollmentSchema = new Schema<IEnrollment>(
   {
     course: { type: Schema.Types.ObjectId, ref: 'Course', required: true },
-    user: { type: Schema.Types.ObjectId, ref: 'User' },
     fullName: { type: String, required: true, trim: true },
     email: { type: String, required: true, trim: true, lowercase: true },
     phone: { type: String, required: true, trim: true },

@@ -1,5 +1,4 @@
 export * from './shared'
-export * from './User'
 export * from './Category'
 export * from './Course'
 export * from './Enrollment'

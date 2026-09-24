@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { useTranslations } from 'next-intl'
-import { Menu, UserRound, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { Link, usePathname } from '@/i18n/navigation'
 import { NAV_ITEMS } from '@/lib/nav'
 import { cn } from '@/lib/utils'
@@ -76,17 +76,8 @@ export function MobileNav() {
               )
             })}
 
-            <div className="mt-6 flex items-center justify-between gap-4">
+            <div className="mt-6">
               <LocaleSwitcher />
-
-              <Link
-                href="/giris"
-                onClick={() => setOpen(false)}
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-brand-500 to-brand-600 px-5 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
-              >
-                <UserRound className="size-4" aria-hidden />
-                {t('signIn')}
-              </Link>
             </div>
           </nav>
         </div>

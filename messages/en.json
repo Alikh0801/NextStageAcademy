@@ -11,9 +11,6 @@
     "career": "CV & Career Support",
     "blog": "Blog",
     "contact": "Contact",
-    "signIn": "Sign in / Sign up",
-    "account": "My account",
-    "signOut": "Sign out",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "language": "Language"
@@ -83,28 +80,6 @@
     "submit": "Send",
     "success": "Your message has been sent. Thank you!",
     "error": "The message could not be sent. Please try again later."
-  },
-  "Auth": {
-    "signInTitle": "Sign in to your account",
-    "signUpTitle": "Create an account",
-    "name": "Full name",
-    "email": "Email",
-    "password": "Password",
-    "phone": "Phone",
-    "signIn": "Sign in",
-    "signUp": "Sign up",
-    "noAccount": "Do not have an account?",
-    "hasAccount": "Already have an account?",
-    "invalidCredentials": "Incorrect email or password.",
-    "emailTaken": "This email is already registered."
-  },
-  "Account": {
-    "title": "My account",
-    "myEnrollments": "My applications",
-    "empty": "You have not applied to any course yet.",
-    "statusPENDING": "Pending",
-    "statusAPPROVED": "Approved",
-    "statusREJECTED": "Rejected"
   },
   "Footer": {
     "quickLinks": "Quick links",
