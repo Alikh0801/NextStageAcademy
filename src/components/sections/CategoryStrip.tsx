@@ -1,6 +1,6 @@
+import type { ComponentType } from 'react'
 import { getTranslations } from 'next-intl/server'
 import {
-  FileSpreadsheet,
   FileText,
   FileUser,
   GraduationCap,
@@ -8,6 +8,7 @@ import {
   Users,
 } from 'lucide-react'
 import { Link } from '@/i18n/navigation'
+import { ExcelIcon } from '@/components/ui/icons/ExcelIcon'
 import type { StaticPathname } from '@/lib/nav'
 
 /**
@@ -17,13 +18,14 @@ import type { StaticPathname } from '@/lib/nav'
  * kateqoriya idarəsi qurulanda süzgəcli ünvanlara keçiriləcək.
  */
 const ITEMS: ReadonlyArray<{
-  icon: typeof Users
+  /** Lucide ikonu və ya öz rəngi olan brend ikonu (Excel). */
+  icon: ComponentType<{ className?: string }>
   titleKey: string
   textKey: string
   href: StaticPathname
 }> = [
   { icon: Users, titleKey: 'hrTitle', textKey: 'hrText', href: '/telimler' },
-  { icon: FileSpreadsheet, titleKey: 'excelTitle', textKey: 'excelText', href: '/telimler' },
+  { icon: ExcelIcon, titleKey: 'excelTitle', textKey: 'excelText', href: '/telimler' },
   { icon: FileText, titleKey: 'softTitle', textKey: 'softText', href: '/telimler' },
   { icon: GraduationCap, titleKey: 'coursesTitle', textKey: 'coursesText', href: '/telimler' },
   { icon: FileUser, titleKey: 'careerTitle', textKey: 'careerText', href: '/karyera' },
