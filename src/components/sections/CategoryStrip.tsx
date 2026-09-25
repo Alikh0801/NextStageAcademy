@@ -1,10 +1,10 @@
 import type { ComponentType } from 'react'
 import { getTranslations } from 'next-intl/server'
 import {
-  FileText,
   FileUser,
   GraduationCap,
   Lightbulb,
+  MessagesSquare,
   Users,
 } from 'lucide-react'
 import { Link } from '@/i18n/navigation'
@@ -26,7 +26,7 @@ const ITEMS: ReadonlyArray<{
 }> = [
   { icon: Users, titleKey: 'hrTitle', textKey: 'hrText', href: '/telimler' },
   { icon: ExcelIcon, titleKey: 'excelTitle', textKey: 'excelText', href: '/telimler' },
-  { icon: FileText, titleKey: 'softTitle', textKey: 'softText', href: '/telimler' },
+  { icon: MessagesSquare, titleKey: 'softTitle', textKey: 'softText', href: '/telimler' },
   { icon: GraduationCap, titleKey: 'coursesTitle', textKey: 'coursesText', href: '/telimler' },
   { icon: FileUser, titleKey: 'careerTitle', textKey: 'careerText', href: '/karyera' },
   { icon: Lightbulb, titleKey: 'resourcesTitle', textKey: 'resourcesText', href: '/bloq' },
