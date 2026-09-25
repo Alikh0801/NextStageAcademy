@@ -65,7 +65,114 @@
     "title": "CV & Career Support",
     "subtitle": "Professional CV writing and career consulting services.",
     "uploadCv": "Upload your CV",
-    "submit": "Send request"
+    "submit": "Send request",
+    "heroTitle": "Don’t leave your career to chance.",
+    "heroLead": "A job search is about more than finding vacancies. The right CV, a strong personal pitch, an effective interview strategy and a clear career direction are all essential parts of the process.",
+    "intro": "At Next Stage Academy, we give candidates professional career support at every stage of their job search. Our aim is not to decide for you, but to help you present your experience and potential more accurately and move towards your career goals more systematically.",
+    "cv": {
+      "title": "Professional CV writing",
+      "subtitle": "Your CV is not just your details — it is your professional pitch.",
+      "text": "We don’t just produce a nicely designed document. We analyse your experience, skills and achievements and present them in a more structured way that employers can easily understand.",
+      "listTitle": "When preparing your CV, we:",
+      "items": [
+        "Analyse your education and work experience",
+        "Identify the key responsibilities and achievements in each role",
+        "Structure your skills",
+        "Write a professional profile and career summary",
+        "Tailor the CV to your specific career direction",
+        "Arrange the information in a clear, readable structure",
+        "Use a modern, professional CV format",
+        "Keep in mind that employers skim CVs quickly"
+      ],
+      "resultLabel": "Result:",
+      "result": "A professional CV aligned with your career goal that shows your experience and potential more clearly."
+    },
+    "tailored": {
+      "title": "CVs tailored to the role",
+      "subtitle": "You don’t have to send the same CV to every vacancy.",
+      "p1": "Different roles put different skills and experience in the spotlight, so it matters that your CV is tailored to the position you are applying for.",
+      "p2": "We analyse the job requirements, match them with your experience and help you highlight the information most relevant to that role more effectively.",
+      "p3": "That way your CV answers not only “Who am I?” but also “What can I bring to this role?”"
+    },
+    "interview": {
+      "title": "Interview preparation",
+      "subtitle": "Your CV opens the door; the interview is your chance to show who you are.",
+      "text": "Our interview preparation helps candidates approach real interviews better prepared and more confident.",
+      "listTitle": "During preparation:",
+      "steps": [
+        {
+          "title": "We analyse interview questions",
+          "text": "We identify likely questions based on the role and the candidate’s experience."
+        },
+        {
+          "title": "We build an answer strategy",
+          "text": "You learn not just to answer questions but to present your experience and skills in a structured way."
+        },
+        {
+          "title": "We run a practice interview",
+          "text": "In a simulation close to a real interview, we rehearse the candidate’s answers, communication and presentation."
+        },
+        {
+          "title": "We give feedback",
+          "text": "We pinpoint strengths and areas worth developing, and give concrete recommendations."
+        }
+      ]
+    },
+    "consulting": {
+      "title": "Career consulting",
+      "subtitle": "“What should my next step be?”",
+      "text": "We offer one-to-one career consulting for people who want to change career direction, move into a new field, start a job search or grow in their current career.",
+      "listTitle": "During the consultation, we:",
+      "items": [
+        "Define your career goals",
+        "Assess your current experience and skills",
+        "Identify the competencies worth developing",
+        "Discuss suitable career directions",
+        "Review possible job search strategies",
+        "Shape a personal development plan for your next steps"
+      ]
+    },
+    "linkedin": {
+      "title": "LinkedIn and professional profile",
+      "subtitle": "Your job search doesn’t end with your CV.",
+      "text": "In today’s career landscape, a professional online presence matters too. We help you present your LinkedIn profile in a more structured and professional way.",
+      "listTitle": "We work on presenting these parts of your profile more clearly and purposefully:",
+      "items": [
+        "The “About” section",
+        "Work experience",
+        "Skills",
+        "Professional headline",
+        "Career direction"
+      ],
+      "outro": ""
+    },
+    "benefitsTitle": "What do you gain from our support?",
+    "benefits": [
+      {
+        "title": "A more professional presentation",
+        "text": "Show your experience and skills more accurately."
+      },
+      {
+        "title": "A clearer career direction",
+        "text": "Define your next step more systematically."
+      },
+      {
+        "title": "Better interview readiness",
+        "text": "Express yourself and your experience more effectively."
+      },
+      {
+        "title": "A personal approach",
+        "text": "Support built around your experience and goals, not a ready-made template."
+      }
+    ],
+    "closingTitle": "Where does your next stage begin?",
+    "closingText": "Whether you are looking for your first job, aiming for a better career opportunity or thinking about changing your professional direction, Next Stage Academy helps you build the next stage of your career path more systematically.",
+    "journey": [
+      "Prepare your CV",
+      "Prepare for interviews",
+      "Plan your career",
+      "Step into the next stage"
+    ]
   },
   "Contact": {
     "bannerTitle": "Got a question? Write to us!",

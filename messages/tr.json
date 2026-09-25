@@ -65,7 +65,114 @@
     "title": "CV ve Kariyer Desteği",
     "subtitle": "Profesyonel CV ve kariyer danışmanlığı hizmetleri.",
     "uploadCv": "CV dosyanı yükle",
-    "submit": "Başvuru gönder"
+    "submit": "Başvuru gönder",
+    "heroTitle": "Kariyerinizi şansa bırakmayın.",
+    "heroLead": "İş arayışı yalnızca ilan bulmaktan ibaret değildir. Doğru bir CV, doğru bir sunum, etkili bir mülakat stratejisi ve net bir kariyer yönü iş arama sürecinin önemli parçalarıdır.",
+    "intro": "Next Stage Academy olarak adaylara iş arayışının farklı aşamalarında profesyonel kariyer desteği sunuyoruz. Amacımız sizin yerinize karar vermek değil; deneyiminizi ve potansiyelinizi daha doğru sunmanıza ve kariyer hedeflerinize daha sistemli bir şekilde yaklaşmanıza destek olmaktır.",
+    "cv": {
+      "title": "Profesyonel CV hazırlama",
+      "subtitle": "CV’niz yalnızca bilgileriniz değil, profesyonel sunumunuzdur.",
+      "text": "CV’yi yalnızca tasarlanmış bir belge olarak hazırlamıyoruz. Deneyimlerinizi, becerilerinizi ve başarılarınızı analiz ederek bunları daha yapılandırılmış ve işveren için anlaşılır bir biçimde sunuyoruz.",
+      "listTitle": "CV hazırlarken:",
+      "items": [
+        "Eğitim ve iş deneyiminizi analiz ediyoruz",
+        "Pozisyonlar bazında temel sorumlulukları ve başarıları belirliyoruz",
+        "Becerilerinizi yapılandırıyoruz",
+        "Profesyonel profil ve kariyer özeti hazırlıyoruz",
+        "CV’yi somut kariyer yönünüze uyarlıyoruz",
+        "Bilgilerin doğru ve okunaklı bir yapıda yer almasını sağlıyoruz",
+        "Modern ve profesyonel bir CV formatı kullanıyoruz",
+        "CV’nin işveren tarafından hızlı okunacağını göz önünde bulunduruyoruz"
+      ],
+      "resultLabel": "Sonuç:",
+      "result": "Deneyiminizi ve potansiyelinizi daha net gösteren, profesyonel ve kariyer hedefinize uygun bir CV."
+    },
+    "tailored": {
+      "title": "İlana uygun CV",
+      "subtitle": "Her ilan için aynı CV’yi kullanmak zorunda değilsiniz.",
+      "p1": "Farklı pozisyonlar farklı beceri ve deneyimleri ön plana çıkarır. Bu nedenle CV’nin başvurduğunuz pozisyona uyarlanması önemlidir.",
+      "p2": "İlanın gerekliliklerini analiz ediyor, deneyiminizle eşleştiriyor ve CV’de o pozisyona en uygun bilgilerin daha etkili şekilde vurgulanmasına yardımcı oluyoruz.",
+      "p3": "Böylece CV’niz yalnızca “Ben kimim?” sorusuna değil, “Bu pozisyon için ne sunabilirim?” sorusuna da yanıt verir."
+    },
+    "interview": {
+      "title": "Mülakata hazırlık",
+      "subtitle": "CV’niz kapıyı açar, mülakat ise kendinizi gösterme fırsatı yaratır.",
+      "text": "Mülakata hazırlık hizmetimiz, adayların gerçek mülakat sürecine daha hazırlıklı ve özgüvenli yaklaşmalarına destek olmak için tasarlandı.",
+      "listTitle": "Hazırlık sürecinde:",
+      "steps": [
+        {
+          "title": "Mülakat sorularını analiz ediyoruz",
+          "text": "Pozisyona ve adayın deneyimine uygun olası soruları belirliyoruz."
+        },
+        {
+          "title": "Yanıt stratejisi oluşturuyoruz",
+          "text": "Sorulara yalnızca yanıt vermeyi değil, deneyim ve becerileri yapılandırılmış bir şekilde sunmayı öğreniyoruz."
+        },
+        {
+          "title": "Deneme mülakatı yapıyoruz",
+          "text": "Gerçek mülakat formatına yakın bir simülasyonla adayın yanıtları, iletişimi ve sunumu üzerinde çalışıyoruz."
+        },
+        {
+          "title": "Geri bildirim veriyoruz",
+          "text": "Güçlü yönleri ve geliştirilmesi faydalı olan noktaları belirleyerek somut öneriler sunuyoruz."
+        }
+      ]
+    },
+    "consulting": {
+      "title": "Kariyer danışmanlığı",
+      "subtitle": "“Bir sonraki adımım ne olmalı?”",
+      "text": "Kariyer yönünü değiştirmek, yeni bir alana geçmek, iş aramaya başlamak ya da mevcut kariyerinde gelişmek isteyen kişilere bireysel kariyer danışmanlığı sunuyoruz.",
+      "listTitle": "Danışmanlık sırasında:",
+      "items": [
+        "Kariyer hedeflerinizi belirliyoruz",
+        "Mevcut deneyim ve becerilerinizi değerlendiriyoruz",
+        "Geliştirilmesi gereken yetkinlikleri belirliyoruz",
+        "Size uygun kariyer yönlerini konuşuyoruz",
+        "İş arayışı için olası stratejileri gözden geçiriyoruz",
+        "Sonraki adımlar için kişisel bir gelişim yönü oluşturuyoruz"
+      ]
+    },
+    "linkedin": {
+      "title": "LinkedIn ve profesyonel profil",
+      "subtitle": "İş arayışı CV ile bitmez.",
+      "text": "Günümüz kariyer ortamında profesyonel çevrim içi görünürlük de önemli bir rol oynar. LinkedIn profilinizin daha yapılandırılmış ve profesyonel bir şekilde sunulmasına destek oluyoruz.",
+      "listTitle": "Profilinizin şu bölümlerinin daha net ve amaca yönelik sunulması üzerinde çalışıyoruz:",
+      "items": [
+        "“About” bölümü",
+        "İş deneyimi",
+        "Beceriler",
+        "Profesyonel başlık",
+        "Kariyer yönü"
+      ],
+      "outro": ""
+    },
+    "benefitsTitle": "Hizmetimiz size ne kazandırır?",
+    "benefits": [
+      {
+        "title": "Daha profesyonel bir sunum",
+        "text": "Deneyim ve becerilerinizi daha doğru göstermek."
+      },
+      {
+        "title": "Daha net bir kariyer yönü",
+        "text": "Bir sonraki adımınızı daha sistemli belirlemek."
+      },
+      {
+        "title": "Mülakata daha hazırlıklı yaklaşım",
+        "text": "Kendinizi ve deneyiminizi daha etkili ifade etmek."
+      },
+      {
+        "title": "Kişisel yaklaşım",
+        "text": "Hazır şablon yerine deneyiminize ve hedeflerinize uygun destek."
+      }
+    ],
+    "closingTitle": "Bir sonraki aşamanız nereden başlıyor?",
+    "closingText": "İster ilk işinizi arıyor, ister daha iyi bir kariyer fırsatına geçmek istiyor, ister profesyonel yönünüzü değiştirmeyi düşünüyor olun — Next Stage Academy kariyer yolunuzun bir sonraki aşamasını daha sistemli kurmanıza destek olur.",
+    "journey": [
+      "CV’ni hazırla",
+      "Mülakata hazırlan",
+      "Kariyerini planla",
+      "Bir sonraki aşamaya geç"
+    ]
   },
   "Contact": {
     "bannerTitle": "Sorun mu var? Bize yaz!",

@@ -65,7 +65,114 @@
     "title": "CV və Karyera dəstəyi",
     "subtitle": "Peşəkar CV və karyera məsləhət xidmətləri.",
     "uploadCv": "CV faylını yüklə",
-    "submit": "Müraciət göndər"
+    "submit": "Müraciət göndər",
+    "heroTitle": "Karyeranızı təsadüfə buraxmayın.",
+    "heroLead": "İş axtarışı yalnız vakansiya tapmaqdan ibarət deyil. Doğru CV, düzgün təqdimat, effektiv müsahibə strategiyası və aydın karyera istiqaməti iş axtarış prosesinin vacib hissələridir.",
+    "intro": "Next Stage Academy olaraq namizədlərə iş axtarışının müxtəlif mərhələlərində peşəkar karyera dəstəyi göstəririk. Məqsədimiz sizin yerinizə qərar vermək deyil, təcrübə və potensialınızı daha düzgün təqdim etməyinizə və karyera məqsədlərinizə daha sistemli şəkildə yaxınlaşmağınıza dəstək olmaqdır.",
+    "cv": {
+      "title": "Peşəkar CV hazırlanması",
+      "subtitle": "CV-niz sadəcə məlumatlarınız deyil, peşəkar təqdimatınızdır.",
+      "text": "CV-ni yalnız dizayn edilmiş sənəd kimi hazırlamırıq. Təcrübənizi, bacarıqlarınızı və nailiyyətlərinizi analiz edərək onları daha strukturlaşdırılmış və işəgötürən üçün anlaşıqlı formada təqdim edirik.",
+      "listTitle": "CV hazırlanarkən:",
+      "items": [
+        "Təhsil və iş təcrübənizi analiz edirik",
+        "Vəzifələr üzrə əsas məsuliyyət və nailiyyətləri müəyyənləşdiririk",
+        "Bacarıqlarınızı strukturlaşdırırıq",
+        "Peşəkar profil və karyera xülasəsi hazırlayırıq",
+        "CV-ni konkret karyera istiqamətinizə uyğunlaşdırırıq",
+        "Məlumatların düzgün və oxunaqlı strukturda yerləşdirilməsini təmin edirik",
+        "Müasir və peşəkar CV formatından istifadə edirik",
+        "CV-nin işəgötürən tərəfindən sürətli oxunmasını nəzərə alırıq"
+      ],
+      "resultLabel": "Nəticə:",
+      "result": "Təcrübənizi və potensialınızı daha aydın şəkildə göstərən, peşəkar və karyera məqsədinizə uyğun CV."
+    },
+    "tailored": {
+      "title": "Vakansiyaya uyğun CV",
+      "subtitle": "Hər vakansiya üçün eyni CV istifadə etmək məcburiyyətində deyilsiniz.",
+      "p1": "Müxtəlif vəzifələr fərqli bacarıq və təcrübələri ön plana çıxarır. Buna görə CV-nin müraciət etdiyiniz vəzifəyə uyğunlaşdırılması vacibdir.",
+      "p2": "Vakansiyanın tələblərini analiz edir, sizin təcrübənizlə uyğunlaşdırır və CV-də həmin mövqeyə ən uyğun məlumatların daha effektiv şəkildə vurğulanmasına kömək edirik.",
+      "p3": "Beləliklə, CV-niz yalnız “mən kiməm?” sualına deyil, həm də “bu vəzifə üçün nə təklif edə bilərəm?” sualına cavab verir."
+    },
+    "interview": {
+      "title": "Müsahibəyə hazırlıq",
+      "subtitle": "CV-niz qapını açır, müsahibə isə özünüzü göstərmək üçün fürsət yaradır.",
+      "text": "Müsahibəyə hazırlıq xidmətimiz namizədlərin real müsahibə prosesinə daha hazırlıqlı və özünəinamlı yanaşmasına dəstək olmaq üçün hazırlanıb.",
+      "listTitle": "Hazırlıq zamanı:",
+      "steps": [
+        {
+          "title": "Müsahibə suallarını analiz edirik",
+          "text": "Vəzifəyə və namizədin təcrübəsinə uyğun mümkün sualları müəyyənləşdiririk."
+        },
+        {
+          "title": "Cavab strategiyası qururuq",
+          "text": "Suallara sadəcə cavab verməyi deyil, təcrübə və bacarıqları strukturlaşdırılmış şəkildə təqdim etməyi öyrənirik."
+        },
+        {
+          "title": "Praktiki müsahibə keçiririk",
+          "text": "Real müsahibə formatına yaxın simulyasiya ilə namizədin cavablarını, ünsiyyətini və təqdimatını məşq edirik."
+        },
+        {
+          "title": "Geri bildirim veririk",
+          "text": "Güclü tərəfləri və inkişaf etdirilməsi faydalı olan məqamları müəyyənləşdirərək konkret tövsiyələr təqdim edirik."
+        }
+      ]
+    },
+    "consulting": {
+      "title": "Karyera konsultasiyası",
+      "subtitle": "“Növbəti addımım nə olmalıdır?”",
+      "text": "Karyera istiqamətini dəyişmək, yeni sahəyə keçmək, iş axtarışına başlamaq və ya mövcud karyerasında inkişaf etmək istəyən şəxslər üçün fərdi karyera konsultasiyası təqdim edirik.",
+      "listTitle": "Konsultasiya zamanı:",
+      "items": [
+        "Karyera məqsədlərinizi müəyyənləşdiririk",
+        "Mövcud təcrübə və bacarıqlarınızı qiymətləndiririk",
+        "İnkişaf etdirilməli kompetensiyaları müəyyənləşdiririk",
+        "Uyğun karyera istiqamətlərini müzakirə edirik",
+        "İş axtarışı üçün mümkün strategiyaları nəzərdən keçiririk",
+        "Növbəti addımlar üçün fərdi inkişaf istiqaməti formalaşdırırıq"
+      ]
+    },
+    "linkedin": {
+      "title": "LinkedIn və peşəkar profil",
+      "subtitle": "İş axtarışı CV ilə bitmir.",
+      "text": "Müasir karyera mühitində peşəkar onlayn görünürlük də vacib rol oynayır. LinkedIn profilinizin daha strukturlaşdırılmış və peşəkar şəkildə təqdim olunmasına dəstək veririk.",
+      "listTitle": "Profilinizin:",
+      "items": [
+        "“About” bölməsinin",
+        "iş təcrübəsinin",
+        "bacarıqlarının",
+        "peşəkar başlığının",
+        "karyera istiqamətinin"
+      ],
+      "outro": "daha aydın və məqsədyönlü şəkildə təqdim olunması üzərində işləyirik."
+    },
+    "benefitsTitle": "Xidmətimiz sizə nə qazandırır?",
+    "benefits": [
+      {
+        "title": "Daha peşəkar təqdimat",
+        "text": "Təcrübə və bacarıqlarınızı daha düzgün göstərmək."
+      },
+      {
+        "title": "Daha aydın karyera istiqaməti",
+        "text": "Növbəti addımınızı daha sistemli müəyyənləşdirmək."
+      },
+      {
+        "title": "Müsahibəyə daha hazırlıqlı yanaşma",
+        "text": "Özünüzü və təcrübənizi daha effektiv ifadə etmək."
+      },
+      {
+        "title": "Fərdi yanaşma",
+        "text": "Hazır şablon əvəzinə sizin təcrübənizə və məqsədinizə uyğun dəstək."
+      }
+    ],
+    "closingTitle": "Sizin növbəti mərhələniz haradan başlayır?",
+    "closingText": "İstər ilk işinizi axtarırsınız, istər daha yaxşı karyera imkanına keçmək istəyirsiniz, istərsə də peşəkar istiqamətinizi dəyişməyi düşünürsünüz — Next Stage Academy karyera yolunuzun növbəti mərhələsini daha sistemli qurmağınıza dəstək olur.",
+    "journey": [
+      "CV-ni hazırla",
+      "Müsahibəyə hazırlaş",
+      "Karyeranı planla",
+      "Növbəti mərhələyə keç"
+    ]
   },
   "Contact": {
     "bannerTitle": "Sualın var? Bizə yaz!",
