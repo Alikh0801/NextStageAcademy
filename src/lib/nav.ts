@@ -32,4 +32,5 @@ export const LOCALE_NAMES = {
   az: 'Azərbaycan',
   ru: 'Русский',
   en: 'English',
+  tr: 'Türkçe',
 } as const

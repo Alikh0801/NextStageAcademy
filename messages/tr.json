@@ -1,0 +1,116 @@
+{
+  "Meta": {
+    "siteName": "NextStage Academy",
+    "tagline": "Eğitimler, kariyer desteği ve faydalı içeriklerle daha güçlü bir geleceğe.",
+    "description": "Eğitimler, kariyer danışmanlığı ve faydalı içeriklerle profesyonel gelişim yolunda yanındayız."
+  },
+  "Nav": {
+    "home": "Ana sayfa",
+    "about": "Hakkımızda",
+    "courses": "Eğitimler",
+    "career": "CV ve Kariyer Desteği",
+    "blog": "Blog",
+    "contact": "İletişim",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "language": "Dil"
+  },
+  "Hero": {
+    "eyebrow": "BİR SONRAKİ ADIM",
+    "title": "Kariyerini bizimle inşa et!",
+    "subtitle": "Eğitimler, kariyer danışmanlığı ve faydalı içeriklerle profesyonel gelişim yolunda yanındayız.",
+    "primaryCta": "Eğitimlere göz at",
+    "secondaryCta": "Hakkımızda",
+    "badgeGrowth": "Profesyonel gelişim",
+    "badgeCommunity": "Güçlü topluluk",
+    "badgeFuture": "Daha iyi bir gelecek"
+  },
+  "Courses": {
+    "featuredTitle": "Popüler eğitimlerimiz",
+    "featuredSubtitle": "Becerilerini geliştir, geleceğine yatırım yap!",
+    "viewAll": "Tümünü gör",
+    "allTitle": "Eğitimler",
+    "empty": "Henüz eğitim eklenmedi.",
+    "duration": "{hours} saat",
+    "price": "{price} ₼",
+    "free": "Ücretsiz",
+    "level": "Seviye",
+    "levelBEGINNER": "Başlangıç",
+    "levelINTERMEDIATE": "Orta",
+    "levelADVANCED": "İleri",
+    "startDate": "Başlangıç tarihi",
+    "instructor": "Eğitmen",
+    "enroll": "Başvur"
+  },
+  "Enrollment": {
+    "title": "Eğitime başvuru",
+    "fullName": "Ad soyad",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "note": "Ek not",
+    "submit": "Başvuruyu gönder",
+    "success": "Başvurun alındı. En kısa sürede seninle iletişime geçeceğiz.",
+    "duplicate": "Bu eğitime zaten başvurdun.",
+    "error": "Başvuru gönderilemedi. Lütfen biraz sonra tekrar dene."
+  },
+  "Blog": {
+    "title": "Blog",
+    "subtitle": "Faydalı makaleler, öneriler ve kariyer hikâyeleri.",
+    "viewAll": "Tümünü gör",
+    "empty": "Henüz yazı eklenmedi.",
+    "readMore": "Oku"
+  },
+  "Career": {
+    "title": "CV ve Kariyer Desteği",
+    "subtitle": "Profesyonel CV ve kariyer danışmanlığı hizmetleri.",
+    "uploadCv": "CV dosyanı yükle",
+    "submit": "Başvuru gönder"
+  },
+  "Contact": {
+    "bannerTitle": "Sorun mu var? Bize yaz!",
+    "bannerSubtitle": "Kariyer ve eğitimlerle ilgili sorularını bizimle paylaş.",
+    "bannerCta": "İletişime geç",
+    "title": "İletişim",
+    "fullName": "Ad soyad",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "subject": "Konu",
+    "message": "Mesajın",
+    "submit": "Gönder",
+    "success": "Mesajın gönderildi. Teşekkür ederiz!",
+    "error": "Mesaj gönderilemedi. Lütfen biraz sonra tekrar dene."
+  },
+  "Footer": {
+    "quickLinks": "Hızlı bağlantılar",
+    "usefulLinks": "Faydalı bağlantılar",
+    "contactUs": "Bize ulaşın",
+    "faq": "Sıkça sorulan sorular",
+    "terms": "Şartlar ve koşullar",
+    "privacy": "Gizlilik politikası",
+    "rights": "© {year}. Tüm hakları saklıdır.",
+    "signature": "Next Stop Again..."
+  },
+  "Common": {
+    "loading": "Yükleniyor...",
+    "notFound": "Sayfa bulunamadı",
+    "notFoundHint": "Aradığın sayfa mevcut değil veya taşınmış.",
+    "backHome": "Ana sayfaya dön",
+    "required": "Bu alan zorunludur",
+    "invalidEmail": "E-posta adresi geçersiz",
+    "comingSoon": "Bu sayfa hazırlanıyor."
+  },
+  "Categories": {
+    "hrTitle": "İK",
+    "hrText": "İnsan kaynakları çözümleri",
+    "excelTitle": "Excel",
+    "excelText": "Pratik beceriler",
+    "softTitle": "Soft Skills",
+    "softText": "Kişisel gelişim",
+    "coursesTitle": "Eğitimler",
+    "coursesText": "Katıl, fark yarat",
+    "careerTitle": "CV ve Kariyer",
+    "careerText": "Kariyerini planla",
+    "resourcesTitle": "Faydalı Kaynaklar",
+    "resourcesText": "Makaleler ve kaynaklar"
+  }
+}

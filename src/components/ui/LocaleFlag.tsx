@@ -1,4 +1,4 @@
-import { AZ, GB, RU } from 'country-flag-icons/react/3x2'
+import { AZ, GB, RU, TR } from 'country-flag-icons/react/3x2'
 import type { Locale } from '@/i18n/routing'
 import { cn } from '@/lib/utils'
 
@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils'
  * Emoji bayraqlar Windows-da göstərilmir (yerinə "AZ" hərfləri çıxır),
  * ona görə SVG işlədirik. İngilis dili üçün Britaniya bayrağı.
  */
-const FLAGS = { az: AZ, ru: RU, en: GB } as const
+const FLAGS = { az: AZ, ru: RU, en: GB, tr: TR } as const
 
 export function LocaleFlag({
   locale,

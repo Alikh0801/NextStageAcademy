@@ -6,7 +6,7 @@ import { NAV_ITEMS, type StaticPathname } from '@/lib/nav'
 import { cn } from '@/lib/utils'
 
 /** `usePathname` dil prefiksi olmadan daxili yolu qaytarır, ona görə
- *  müqayisə üç dildə də eyni işləyir. */
+ *  müqayisə bütün dillərdə eyni işləyir. */
 export function isActivePath(pathname: string, href: StaticPathname): boolean {
   if (href === '/') return pathname === '/'
   return pathname === href || pathname.startsWith(`${href}/`)

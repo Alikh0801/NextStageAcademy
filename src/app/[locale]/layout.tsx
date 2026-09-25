@@ -7,7 +7,7 @@ import { routing } from '@/i18n/routing'
 import { inter, poppins } from '../fonts'
 import '../globals.css'
 
-/** Üç dilin hamısını build zamanı əvvəlcədən hazırlayır. */
+/** Bütün dilləri build zamanı əvvəlcədən hazırlayır. */
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
 }
