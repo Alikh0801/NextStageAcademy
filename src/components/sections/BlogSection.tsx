@@ -53,7 +53,8 @@ export async function BlogSection() {
   const posts = await getLatestPosts(locale)
 
   return (
-    <section className="bg-ink-50 py-16 lg:py-20 dark:bg-ink-900">
+    // Alt boşluq kiçikdir — altındakı ContactBanner eyni fonda davam edir.
+    <section className="bg-ink-50 pb-10 pt-16 lg:pb-12 lg:pt-20 dark:bg-ink-900">
       <div className="container-page">
         <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-3">
           <div>

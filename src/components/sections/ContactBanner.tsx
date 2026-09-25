@@ -8,11 +8,13 @@ export async function ContactBanner() {
   const t = await getTranslations('Contact')
 
   return (
-    <section className="bg-white py-12 lg:py-16 dark:bg-ink-950">
+    // Bloq bölməsi ilə eyni fondadır: üst məsafəni bloqun alt boşluğu verir,
+    // alt boşluq da ona bərabərdir ki, footer-ə qədər məsafə eyni olsun.
+    <section className="bg-ink-50 pb-10 lg:pb-12 dark:bg-ink-900">
       <div className="container-page">
-        <div className="flex flex-col gap-6 rounded-2xl bg-brand-50 p-6 sm:flex-row sm:items-center sm:gap-8 sm:p-8 lg:px-10 dark:border dark:border-white/10 dark:bg-brand-500/10">
+        <div className="flex flex-col gap-6 rounded-2xl bg-brand-100/60 p-6 sm:flex-row sm:items-center sm:gap-8 sm:p-8 lg:px-10 dark:border dark:border-white/10 dark:bg-brand-500/10">
           <div className="flex flex-1 items-center gap-5 sm:gap-6">
-            <span className="flex size-16 shrink-0 items-center justify-center rounded-full bg-brand-100 sm:size-20 dark:bg-brand-500/20">
+            <span className="flex size-16 shrink-0 items-center justify-center rounded-full bg-white sm:size-20 dark:bg-brand-500/20">
               <WhatsAppIcon className="size-8 text-brand-700 sm:size-9 dark:text-brand-300" />
             </span>
 
