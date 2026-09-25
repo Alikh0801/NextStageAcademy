@@ -18,7 +18,7 @@ import type { StaticPathname } from '@/lib/nav'
  * kateqoriya idarəsi qurulanda süzgəcli ünvanlara keçiriləcək.
  */
 const ITEMS: ReadonlyArray<{
-  /** Lucide ikonu və ya öz rəngi olan brend ikonu (Excel). */
+  /** Lucide ikonu və ya onun üslubunda çəkilmiş öz ikonumuz (Excel). */
   icon: ComponentType<{ className?: string }>
   titleKey: string
   textKey: string
