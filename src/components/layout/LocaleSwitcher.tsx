@@ -5,7 +5,8 @@ import { useParams } from 'next/navigation'
 import { useLocale, useTranslations } from 'next-intl'
 import { Check, ChevronDown } from 'lucide-react'
 import { usePathname, useRouter } from '@/i18n/navigation'
-import { routing } from '@/i18n/routing'
+import { routing, type Locale } from '@/i18n/routing'
+import { LocaleFlag } from '@/components/ui/LocaleFlag'
 import { LOCALE_NAMES } from '@/lib/nav'
 import { cn } from '@/lib/utils'
 
@@ -59,8 +60,9 @@ export function LocaleSwitcher({ className }: { className?: string }) {
         aria-expanded={open}
         aria-haspopup="listbox"
         aria-label={t('language')}
-        className="flex items-center gap-1 rounded-full px-2 py-1.5 text-[13px] font-medium uppercase text-ink-600 transition-colors hover:text-brand-600"
+        className="flex items-center gap-1.5 rounded-full px-2 py-1.5 text-[13px] font-medium uppercase text-ink-600 transition-colors hover:text-brand-600"
       >
+        <LocaleFlag locale={locale as Locale} />
         {locale}
         <ChevronDown
           className={cn('size-3.5 transition-transform', open && 'rotate-180')}
@@ -87,7 +89,10 @@ export function LocaleSwitcher({ className }: { className?: string }) {
                     : 'text-ink-700 hover:bg-brand-50',
                 )}
               >
-                {LOCALE_NAMES[code]}
+                <span className="flex items-center gap-2.5">
+                  <LocaleFlag locale={code} />
+                  {LOCALE_NAMES[code]}
+                </span>
                 {code === locale && <Check className="size-4" aria-hidden />}
               </button>
             </li>

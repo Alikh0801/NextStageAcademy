@@ -7,7 +7,6 @@ import { Link, usePathname } from '@/i18n/navigation'
 import { NAV_ITEMS } from '@/lib/nav'
 import { cn } from '@/lib/utils'
 import { isActivePath } from './DesktopNav'
-import { LocaleSwitcher } from './LocaleSwitcher'
 
 export function MobileNav() {
   const t = useTranslations('Nav')
@@ -75,10 +74,6 @@ export function MobileNav() {
                 </Link>
               )
             })}
-
-            <div className="mt-6">
-              <LocaleSwitcher />
-            </div>
           </nav>
         </div>
       )}

@@ -15,7 +15,8 @@ export function Header() {
         <DesktopNav />
 
         <div className="flex shrink-0 items-center gap-2">
-          <LocaleSwitcher className="hidden lg:block" />
+          {/* Mobildə də navbarda qalır — hamburger menyunun solunda. */}
+          <LocaleSwitcher />
 
           <MobileNav />
         </div>
