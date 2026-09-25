@@ -2,9 +2,10 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
+import { Footer } from '@/components/layout/Footer'
 import { Header } from '@/components/layout/Header'
 import { routing } from '@/i18n/routing'
-import { inter, poppins } from '../fonts'
+import { inter, poppins, sacramento } from '../fonts'
 import '../globals.css'
 
 /** Bütün dilləri build zamanı əvvəlcədən hazırlayır. */
@@ -43,12 +44,13 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${inter.variable} ${poppins.variable} h-full`}
+      className={`${inter.variable} ${poppins.variable} ${sacramento.variable} h-full`}
     >
       <body className="flex min-h-full flex-col">
         <NextIntlClientProvider>
           <Header />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

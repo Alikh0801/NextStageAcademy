@@ -82,11 +82,8 @@
   },
   "Footer": {
     "quickLinks": "Hızlı bağlantılar",
-    "usefulLinks": "Faydalı bağlantılar",
     "contactUs": "Bize ulaşın",
-    "faq": "Sıkça sorulan sorular",
-    "terms": "Şartlar ve koşullar",
-    "privacy": "Gizlilik politikası",
+    "address": "Bakü, Azerbaycan",
     "rights": "© {year}. Tüm hakları saklıdır.",
     "signature": "Next Stop Again..."
   },

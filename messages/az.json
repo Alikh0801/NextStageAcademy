@@ -82,11 +82,8 @@
   },
   "Footer": {
     "quickLinks": "Sürətli keçidlər",
-    "usefulLinks": "Faydalı linklər",
     "contactUs": "Bizimlə əlaqə",
-    "faq": "Tez-tez verilən suallar",
-    "terms": "Şərtlər və qaydalar",
-    "privacy": "Məxfilik siyasəti",
+    "address": "Bakı, Azərbaycan",
     "rights": "© {year}. Bütün hüquqlar qorunur.",
     "signature": "Next Stop Again..."
   },

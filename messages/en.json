@@ -82,11 +82,8 @@
   },
   "Footer": {
     "quickLinks": "Quick links",
-    "usefulLinks": "Useful links",
     "contactUs": "Contact us",
-    "faq": "Frequently asked questions",
-    "terms": "Terms and conditions",
-    "privacy": "Privacy policy",
+    "address": "Baku, Azerbaijan",
     "rights": "© {year}. All rights reserved.",
     "signature": "Next Stop Again..."
   },
