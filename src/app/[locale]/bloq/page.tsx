@@ -12,7 +12,7 @@ export default async function BlogPage({
   return (
     <main className="container-page flex-1 py-24">
       <h1 className="text-4xl">{t('Blog.title')}</h1>
-      <p className="mt-4 text-ink-500">{t('Common.comingSoon')}</p>
+      <p className="mt-4 text-ink-500 dark:text-ink-300">{t('Common.comingSoon')}</p>
     </main>
   )
 }

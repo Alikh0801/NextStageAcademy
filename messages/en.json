@@ -13,7 +13,8 @@
     "contact": "Contact",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "language": "Language"
+    "language": "Language",
+    "darkMode": "Dark mode"
   },
   "Hero": {
     "eyebrow": "THE NEXT STEP",

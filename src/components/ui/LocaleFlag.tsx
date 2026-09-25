@@ -21,7 +21,7 @@ export function LocaleFlag({
     <span
       aria-hidden
       className={cn(
-        'inline-flex h-3.5 w-[21px] shrink-0 overflow-hidden rounded-[3px] ring-1 ring-ink-900/10',
+        'inline-flex h-3.5 w-[21px] shrink-0 overflow-hidden rounded-[3px] ring-1 ring-ink-900/10 dark:ring-white/15',
         className,
       )}
     >

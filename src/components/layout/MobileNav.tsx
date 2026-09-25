@@ -40,7 +40,7 @@ export function MobileNav() {
         aria-expanded={open}
         aria-controls="mobil-menyu"
         aria-label={open ? t('closeMenu') : t('openMenu')}
-        className="flex size-10 items-center justify-center rounded-full text-ink-700 transition-colors hover:bg-brand-50 hover:text-brand-600"
+        className="flex size-10 items-center justify-center rounded-full text-ink-700 transition-colors hover:bg-brand-50 hover:text-brand-600 dark:text-ink-200 dark:hover:bg-white/5 dark:hover:text-brand-300"
       >
         {open ? (
           <X className="size-5" aria-hidden />
@@ -53,7 +53,7 @@ export function MobileNav() {
         <div
           id="mobil-menyu"
           // Header 80px hündürlükdədir — panel onun altından başlayır.
-          className="fixed inset-x-0 bottom-0 top-20 z-40 overflow-y-auto border-t border-ink-100 bg-white"
+          className="fixed inset-x-0 bottom-0 top-20 z-40 overflow-y-auto border-t border-ink-100 bg-white dark:border-white/10 dark:bg-ink-950"
         >
           <nav className="container-page flex flex-col py-4">
             {NAV_ITEMS.map(({ href, labelKey }) => {
@@ -66,8 +66,10 @@ export function MobileNav() {
                   aria-current={active ? 'page' : undefined}
                   onClick={() => setOpen(false)}
                   className={cn(
-                    'border-b border-ink-100 py-4 text-base transition-colors',
-                    active ? 'text-brand-600' : 'text-ink-700',
+                    'border-b border-ink-100 py-4 text-base transition-colors dark:border-white/10',
+                    active
+                      ? 'text-brand-600 dark:text-brand-300'
+                      : 'text-ink-700 dark:text-ink-200',
                   )}
                 >
                   {t(labelKey)}

@@ -53,17 +53,17 @@ export async function BlogSection() {
   const posts = await getLatestPosts(locale)
 
   return (
-    <section className="bg-ink-50 py-16 lg:py-20">
+    <section className="bg-ink-50 py-16 lg:py-20 dark:bg-ink-900">
       <div className="container-page">
         <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-3">
           <div>
             <h2 className="text-3xl lg:text-4xl">{t('title')}</h2>
-            <p className="mt-2 text-ink-500">{t('subtitle')}</p>
+            <p className="mt-2 text-ink-500 dark:text-ink-300">{t('subtitle')}</p>
           </div>
 
           <Link
             href="/bloq"
-            className="inline-flex items-center gap-2 text-sm font-medium text-brand-600 transition-colors hover:text-brand-700"
+            className="inline-flex items-center gap-2 text-sm font-medium text-brand-600 transition-colors hover:text-brand-700 dark:text-brand-300 dark:hover:text-brand-200"
           >
             {t('viewAll')}
             <ArrowRight className="size-4" aria-hidden />
@@ -71,7 +71,7 @@ export async function BlogSection() {
         </div>
 
         {posts.length === 0 ? (
-          <p className="mt-10 rounded-2xl border border-dashed border-ink-200 bg-white px-6 py-12 text-center text-sm text-ink-400">
+          <p className="mt-10 rounded-2xl border border-dashed border-ink-200 bg-white px-6 py-12 text-center text-sm text-ink-400 dark:border-white/15 dark:bg-ink-950">
             {t('empty')}
           </p>
         ) : (
@@ -80,9 +80,9 @@ export async function BlogSection() {
               <li key={post.slug}>
                 <Link
                   href={{ pathname: '/bloq/[slug]', params: { slug: post.slug } }}
-                  className="group flex h-full flex-col overflow-hidden rounded-2xl border border-ink-100 bg-white transition-shadow hover:shadow-lg hover:shadow-ink-900/5"
+                  className="group flex h-full flex-col overflow-hidden rounded-2xl border border-ink-100 bg-white transition-shadow hover:shadow-lg hover:shadow-ink-900/5 dark:border-white/10 dark:bg-ink-950 dark:hover:shadow-black/40"
                 >
-                  <div className="relative aspect-[16/10] bg-brand-100">
+                  <div className="relative aspect-[16/10] bg-brand-100 dark:bg-brand-500/15">
                     {post.coverImage && (
                       <Image
                         src={post.coverImage}
@@ -95,7 +95,7 @@ export async function BlogSection() {
                   </div>
 
                   <div className="flex flex-1 flex-col p-5">
-                    <h3 className="text-base font-semibold leading-snug text-ink-900 transition-colors group-hover:text-brand-700">
+                    <h3 className="text-base font-semibold leading-snug text-ink-900 transition-colors group-hover:text-brand-700 dark:text-white dark:group-hover:text-brand-300">
                       {post.title}
                     </h3>
 

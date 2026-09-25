@@ -15,7 +15,7 @@ export async function Hero() {
   return (
     // `isolate` ayrıca yığın konteksti yaradır — mənfi z-index-lər
     // bölmədən kənara çıxmır və header-in altına düşmür.
-    <section className="relative isolate flex min-h-[540px] items-center overflow-hidden bg-white lg:min-h-[660px]">
+    <section className="relative isolate flex min-h-[540px] items-center overflow-hidden bg-white lg:min-h-[660px] dark:bg-ink-950">
       {/*
         Sırf dekorativ fon: abstrakt qradiyentdir, heç bir obyekt daşımır.
         Ona görə `alt` boşdur — ekran oxuyucusu onu ötürsün. Şəkil hər yerində
@@ -27,12 +27,22 @@ export async function Hero() {
         fill
         priority
         sizes="100vw"
-        className="-z-10 object-cover object-center"
+        className="-z-10 object-cover object-center dark:hidden"
+      />
+      {/* Eyni dalğaların tünd variantı. Gizli olsa da yüklənsin ki, tema
+          dəyişəndə fon boş qalmasın. */}
+      <Image
+        src="/hero/fone-dark.jpeg"
+        alt=""
+        fill
+        loading="eager"
+        sizes="100vw"
+        className="-z-10 hidden object-cover object-center dark:block"
       />
 
       <div className="container-page">
         <div className="max-w-lg py-16 lg:py-20">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-ink-400">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-ink-400 dark:text-brand-300">
             {t('eyebrow')}
           </p>
 
@@ -40,7 +50,7 @@ export async function Hero() {
             {t('title')}
           </h1>
 
-          <p className="mt-5 text-base leading-relaxed text-ink-500 sm:text-lg">
+          <p className="mt-5 text-base leading-relaxed text-ink-500 sm:text-lg dark:text-ink-300">
             {t('subtitle')}
           </p>
 
@@ -55,7 +65,7 @@ export async function Hero() {
 
             <Link
               href="/haqqimizda"
-              className="inline-flex items-center rounded-full border border-ink-200 bg-white/70 px-7 py-3.5 text-[15px] font-medium text-ink-800 backdrop-blur-sm transition-colors hover:border-brand-400 hover:text-brand-700"
+              className="inline-flex items-center rounded-full border border-ink-200 bg-white/70 px-7 py-3.5 text-[15px] font-medium text-ink-800 backdrop-blur-sm transition-colors hover:border-brand-400 hover:text-brand-700 dark:border-white/20 dark:bg-white/5 dark:text-ink-100 dark:hover:border-brand-300 dark:hover:text-brand-200"
             >
               {t('secondaryCta')}
             </Link>
@@ -65,9 +75,9 @@ export async function Hero() {
             {BADGES.map(({ icon: Icon, key }) => (
               <li
                 key={key}
-                className="flex items-center gap-2.5 text-sm text-ink-600"
+                className="flex items-center gap-2.5 text-sm text-ink-600 dark:text-ink-300"
               >
-                <Icon className="size-5 shrink-0 text-brand-500" aria-hidden />
+                <Icon className="size-5 shrink-0 text-brand-500 dark:text-brand-300" aria-hidden />
                 {t(key)}
               </li>
             ))}

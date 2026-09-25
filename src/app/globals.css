@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Tünd rejim `<html class="dark">` ilə açılır (bax: src/lib/theme.ts). */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* Əsas bənövşəyi — düymələr, linklər, vurğular */
   --color-brand-50: #f6f4fc;
@@ -44,6 +47,16 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  /* Skrol zolağı və form elementləri də tünd görünsün */
+  .dark {
+    color-scheme: dark;
+  }
+
+  .dark body {
+    background-color: var(--color-ink-950);
+    color: var(--color-ink-200);
+  }
+
   h1,
   h2,
   h3 {
@@ -51,6 +64,10 @@
     font-weight: 700;
     letter-spacing: -0.02em;
     color: var(--color-ink-900);
+  }
+
+  .dark :is(h1, h2, h3) {
+    color: #ffffff;
   }
 }
 

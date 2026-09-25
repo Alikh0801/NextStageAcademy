@@ -36,7 +36,7 @@ export async function CategoryStrip() {
   const t = await getTranslations('Categories')
 
   return (
-    <section className="bg-white py-12 lg:py-16">
+    <section className="bg-white py-12 lg:py-16 dark:bg-ink-950">
       <div className="container-page">
         <ul className="grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-3 lg:grid-cols-6">
           {ITEMS.map(({ icon: Icon, titleKey, textKey, href }) => (
@@ -45,11 +45,11 @@ export async function CategoryStrip() {
                 href={href}
                 className="group flex flex-col items-center text-center"
               >
-                <span className="flex size-16 items-center justify-center rounded-full bg-brand-100 transition-colors group-hover:bg-brand-200">
-                  <Icon className="size-7 text-brand-600" aria-hidden />
+                <span className="flex size-16 items-center justify-center rounded-full bg-brand-100 transition-colors group-hover:bg-brand-200 dark:bg-brand-500/15 dark:group-hover:bg-brand-500/25">
+                  <Icon className="size-7 text-brand-600 dark:text-brand-300" aria-hidden />
                 </span>
 
-                <span className="mt-4 text-[15px] font-semibold text-ink-900 transition-colors group-hover:text-brand-700">
+                <span className="mt-4 text-[15px] font-semibold text-ink-900 transition-colors group-hover:text-brand-700 dark:text-white dark:group-hover:text-brand-300">
                   {t(titleKey)}
                 </span>
 

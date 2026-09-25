@@ -60,7 +60,7 @@ export function LocaleSwitcher({ className }: { className?: string }) {
         aria-expanded={open}
         aria-haspopup="listbox"
         aria-label={t('language')}
-        className="flex items-center gap-1.5 rounded-full px-2 py-1.5 text-[13px] font-medium uppercase text-ink-600 transition-colors hover:text-brand-600"
+        className="flex items-center gap-1.5 rounded-full px-2 py-1.5 text-[13px] font-medium uppercase text-ink-600 transition-colors hover:text-brand-600 dark:text-ink-300 dark:hover:text-brand-300"
       >
         <LocaleFlag locale={locale as Locale} />
         {locale}
@@ -73,7 +73,7 @@ export function LocaleSwitcher({ className }: { className?: string }) {
       {open && (
         <ul
           role="listbox"
-          className="absolute right-0 top-full z-50 mt-2 min-w-40 overflow-hidden rounded-xl border border-ink-100 bg-white py-1 shadow-lg shadow-ink-900/5"
+          className="absolute right-0 top-full z-50 mt-2 min-w-40 overflow-hidden rounded-xl border border-ink-100 bg-white py-1 shadow-lg shadow-ink-900/5 dark:border-white/10 dark:bg-ink-900 dark:shadow-black/30"
         >
           {routing.locales.map((code) => (
             <li key={code}>
@@ -85,8 +85,8 @@ export function LocaleSwitcher({ className }: { className?: string }) {
                 className={cn(
                   'flex w-full items-center justify-between gap-3 px-3 py-2 text-left text-sm transition-colors',
                   code === locale
-                    ? 'text-brand-600'
-                    : 'text-ink-700 hover:bg-brand-50',
+                    ? 'text-brand-600 dark:text-brand-300'
+                    : 'text-ink-700 hover:bg-brand-50 dark:text-ink-200 dark:hover:bg-white/5',
                 )}
               >
                 <span className="flex items-center gap-2.5">

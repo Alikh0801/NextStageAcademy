@@ -15,7 +15,7 @@ export async function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="bg-ink-900 text-white/70">
+    <footer className="bg-ink-900 text-white/70 dark:border-t dark:border-white/10">
       <div className="container-page">
         <div className="grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr] lg:gap-16">
           <div className="sm:col-span-2 lg:col-span-1">

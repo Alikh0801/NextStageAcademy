@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { Footer } from '@/components/layout/Footer'
 import { Header } from '@/components/layout/Header'
 import { routing } from '@/i18n/routing'
+import { THEME_INIT_SCRIPT } from '@/lib/theme'
 import { inter, poppins, sacramento } from '../fonts'
 import '../globals.css'
 
@@ -45,7 +46,12 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       className={`${inter.variable} ${poppins.variable} ${sacramento.variable} h-full`}
+      // Tema skripti `dark` klassını hidratasiyadan əvvəl qoyur.
+      suppressHydrationWarning
     >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+      </head>
       <body className="flex min-h-full flex-col">
         <NextIntlClientProvider>
           <Header />

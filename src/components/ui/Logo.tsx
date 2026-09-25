@@ -7,15 +7,25 @@ import { cn } from '@/lib/utils'
  * kəsilmiş və şəffaf fonlu `logo.png` hazırlandı.
  *
  * `logo-light.png` tünd fon (footer) üçündür: nişan eyni qalır, "Next Stage"
- * yazısı ağ, "ACADEMY" isə açıq bənövşəyidir.
+ * yazısı ağ, "ACADEMY" isə açıq bənövşəyidir. `tone="auto"` hər ikisini
+ * render edir və tünd rejimdə açıq variantı göstərir.
  */
 export function Logo({
   className,
   tone = 'dark',
 }: {
   className?: string
-  tone?: 'dark' | 'light'
+  tone?: 'dark' | 'light' | 'auto'
 }) {
+  if (tone === 'auto') {
+    return (
+      <>
+        <Logo className={cn('dark:hidden', className)} />
+        <Logo tone="light" className={cn('hidden dark:block', className)} />
+      </>
+    )
+  }
+
   return (
     <Image
       src={tone === 'light' ? '/logo/logo-light.png' : '/logo/logo.png'}

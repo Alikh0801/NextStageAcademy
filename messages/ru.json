@@ -13,7 +13,8 @@
     "contact": "Контакты",
     "openMenu": "Открыть меню",
     "closeMenu": "Закрыть меню",
-    "language": "Язык"
+    "language": "Язык",
+    "darkMode": "Тёмная тема"
   },
   "Hero": {
     "eyebrow": "СЛЕДУЮЩИЙ ШАГ",
