@@ -1,7 +1,7 @@
 {
   "Meta": {
     "siteName": "NextStage Academy",
-    "tagline": "A stronger future through training, career support and useful resources.",
+    "tagline": "Your next stage starts here",
     "description": "Training, career guidance and useful content to support your professional growth."
   },
   "Nav": {
@@ -85,8 +85,7 @@
     "quickLinks": "Quick links",
     "contactUs": "Contact us",
     "address": "Baku, Azerbaijan",
-    "rights": "© {year}. All rights reserved.",
-    "signature": "Next Stop Again..."
+    "rights": "© {year}. All rights reserved."
   },
   "Common": {
     "loading": "Loading...",

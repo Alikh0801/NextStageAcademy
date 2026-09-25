@@ -1,4 +1,4 @@
-import { Inter, Poppins, Sacramento } from 'next/font/google'
+import { Inter, Poppins } from 'next/font/google'
 
 /** Sayt və admin panel ayrı root layout-lardır — fontlar hər ikisində eynidir. */
 export const inter = Inter({
@@ -12,13 +12,4 @@ export const poppins = Poppins({
   subsets: ['latin', 'latin-ext'],
   weight: ['600', '700'],
   display: 'swap',
-})
-
-/** Footer-dəki "Next Stop Again..." imzası üçün əlyazma şrifti. */
-export const sacramento = Sacramento({
-  variable: '--font-sacramento',
-  subsets: ['latin'],
-  weight: '400',
-  display: 'swap',
-  preload: false,
 })

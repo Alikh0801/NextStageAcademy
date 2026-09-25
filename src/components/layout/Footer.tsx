@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server'
-import { Heart, MapPin, Phone } from 'lucide-react'
+import { MapPin, Phone } from 'lucide-react'
 import { Link } from '@/i18n/navigation'
 import { Logo } from '@/components/ui/Logo'
 import { NAV_ITEMS } from '@/lib/nav'
@@ -69,12 +69,8 @@ export async function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-3 border-t border-white/15 py-6 text-center sm:flex-row sm:justify-between sm:text-left">
+        <div className="border-t border-white/15 py-6 text-center sm:text-left">
           <p className="text-sm">{t('rights', { year })}</p>
-          <p className="flex items-center gap-2 font-script text-3xl leading-none text-white">
-            {t('signature')}
-            <Heart className="size-4 shrink-0" aria-hidden />
-          </p>
         </div>
       </div>
     </footer>

@@ -1,7 +1,7 @@
 {
   "Meta": {
     "siteName": "NextStage Academy",
-    "tagline": "Eğitimler, kariyer desteği ve faydalı içeriklerle daha güçlü bir geleceğe.",
+    "tagline": "Bir sonraki aşamanız burada başlıyor",
     "description": "Eğitimler, kariyer danışmanlığı ve faydalı içeriklerle profesyonel gelişim yolunda yanındayız."
   },
   "Nav": {
@@ -85,8 +85,7 @@
     "quickLinks": "Hızlı bağlantılar",
     "contactUs": "Bize ulaşın",
     "address": "Bakü, Azerbaycan",
-    "rights": "© {year}. Tüm hakları saklıdır.",
-    "signature": "Next Stop Again..."
+    "rights": "© {year}. Tüm hakları saklıdır."
   },
   "Common": {
     "loading": "Yükleniyor...",
