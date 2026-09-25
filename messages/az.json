@@ -109,5 +109,33 @@
     "careerText": "Karyeranı planlaşdır",
     "resourcesTitle": "Faydalı Məlumatlar",
     "resourcesText": "Məqalə və resurslar"
+  },
+  "About": {
+    "title": "Gələcəyin üçün növbəti mərhələyə keç.",
+    "lead": "Next Stage Academy insanların peşəkar inkişafına, karyera yolunu daha doğru istiqamətləndirməsinə və sahib olduqları potensialı real bacarıqlara çevirməsinə dəstək olmaq üçün yaradılmış inkişaf platformasıdır.",
+    "introP1": "Biz inanırıq ki, karyera yalnız bir iş tapmaqdan ibarət deyil. Doğru karyera yolunun qurulması özünü tanımaq, bacarıqlarını düzgün təqdim etmək, yeni biliklər qazanmaq, inkişaf istiqamətini müəyyənləşdirmək və əldə olunan imkanlardan düzgün istifadə etməyi tələb edir.",
+    "introP2": "Məhz buna görə Next Stage Academy-də yalnız təlimlər təqdim etmirik. Biz karyera yolunun müxtəlif mərhələlərində ehtiyac duyulan bilik, bacarıq və dəstəyi bir araya gətiririk.",
+    "servicesTitle": "Karyera yolunda sizə necə dəstək oluruq?",
+    "servicesLead": "İş axtarışının ilk mərhələsindən başlayaraq peşəkar inkişafın növbəti addımlarına qədər müxtəlif xidmətlər təqdim edirik.",
+    "cvTitle": "CV hazırlanması və karyera sənədləri",
+    "cvText": "Təcrübə və bacarıqlarınızı düzgün şəkildə təqdim edən, vakansiyanın tələblərinə uyğun və peşəkar görünən CV hazırlamaqda dəstək oluruq. Məqsədimiz sadəcə gözəl CV yaratmaq deyil, sizin təcrübənizi və potensialınızı işəgötürən üçün daha aydın göstərməkdir.",
+    "interviewTitle": "Müsahibəyə hazırlıq",
+    "interviewText": "Müsahibə zamanı özünü düzgün ifadə etmək, verilən suallara strukturlaşdırılmış cavab vermək, güclü tərəfləri nümayiş etdirmək və peşəkar ünsiyyət qurmaq bacarıqları üzərində işləyirik. Real müsahibə nümunələri və praktiki yanaşma ilə namizədlərin özünəinamlı şəkildə hazırlaşmasına kömək edirik.",
+    "consultingTitle": "Karyera konsultasiyası",
+    "consultingText": "Karyerasının hansı istiqamətdə davam edəcəyinə qərar verməkdə çətinlik çəkən, ixtisasını dəyişmək, yeni sahəyə keçmək və ya peşəkar inkişafını planlaşdırmaq istəyən şəxslər üçün fərdi konsultasiya imkanları təqdim edirik. Məqsədimiz sizin əvəzinizə qərar vermək deyil, doğru sualları müəyyənləşdirərək daha aydın karyera istiqaməti formalaşdırmağınıza kömək etməkdir.",
+    "trainingTitle": "Təlim və inkişaf proqramları",
+    "trainingText": "Müasir iş dünyasında tələb olunan həm texniki, həm də şəxsi bacarıqların inkişafına yönəlmiş təlimlər təşkil edirik. Kommunikasiya, liderlik, komanda işi, təqdimat bacarıqları, Excel və digər peşəkar bacarıqlar üzrə praktiki öyrənməyə əsaslanan proqramlar hazırlayırıq.",
+    "growthTitle": "Peşəkar və şəxsi inkişaf",
+    "growthText": "Bizim üçün inkişaf yalnız yeni bir bacarıq öyrənmək deyil. Özünü tanımaq, potensialını kəşf etmək, güclü tərəflərini inkişaf etdirmək, zəif tərəfləri üzərində işləmək və dəyişən əmək bazarına uyğunlaşmaq da bu yolun vacib hissəsidir.",
+    "beliefsTitle": "Nəyə inanırıq?",
+    "beliefsP1": "Biz inanırıq ki, hər bir insanın inkişaf etmək üçün potensialı var. Bəzən isə növbəti mərhələyə keçmək üçün sadəcə düzgün istiqamət, doğru resurs və yanında yol göstərəcək bir dəstək lazımdır.",
+    "beliefsP2": "Next Stage Academy məhz bu dəstəyi yaratmaq üçün fəaliyyət göstərir.",
+    "beliefsP3": "Burada məqsədimiz insanlara yalnız məlumat vermək deyil, öyrəndiklərini tətbiq edə biləcəkləri, özlərini daha yaxşı tanıya biləcəkləri və karyeralarında real addımlar ata biləcəkləri bir inkişaf mühiti formalaşdırmaqdır.",
+    "closingText": "İstər ilk CV-nizi hazırlayırsınız, istər müsahibəyə hazırlaşırsınız, istər karyera istiqamətinizi müəyyənləşdirirsiniz, istərsə də mövcud bacarıqlarınızı inkişaf etdirmək istəyirsiniz — Next Stage Academy sizin növbəti mərhələniz üçün yolun başlanğıcı ola bilər.",
+    "closingLead": "Çünki növbəti mərhələ təsadüfən gəlmir.",
+    "motto1": "Öyrən.",
+    "motto2": "İnkişaf et.",
+    "motto3": "Tətbiq et.",
+    "motto4": "Növbəti mərhələyə keç."
   }
 }

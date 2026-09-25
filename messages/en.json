@@ -109,5 +109,33 @@
     "careerText": "Plan your career",
     "resourcesTitle": "Useful Resources",
     "resourcesText": "Articles and resources"
+  },
+  "About": {
+    "title": "Step into the next stage of your future.",
+    "lead": "Next Stage Academy is a development platform created to help people grow professionally, steer their career path in the right direction and turn their potential into real skills.",
+    "introP1": "We believe a career is about more than finding a job. Building the right career path means knowing yourself, presenting your skills well, gaining new knowledge, choosing your direction of growth and making the most of the opportunities you have.",
+    "introP2": "That is why Next Stage Academy offers more than training. We bring together the knowledge, skills and support needed at every stage of a career path.",
+    "servicesTitle": "How do we support you on your career path?",
+    "servicesLead": "From the very first steps of a job search to the next steps in your professional growth, we offer a range of services.",
+    "cvTitle": "CV writing and career documents",
+    "cvText": "We help you prepare a professional CV that presents your experience and skills clearly and matches the requirements of the role. Our goal is not just a good-looking CV, but one that shows employers your experience and potential more clearly.",
+    "interviewTitle": "Interview preparation",
+    "interviewText": "We work on expressing yourself well in an interview, giving structured answers, showing your strengths and communicating professionally. With real interview examples and a practical approach, we help candidates prepare with confidence.",
+    "consultingTitle": "Career consulting",
+    "consultingText": "We offer one-to-one consultations for people who find it hard to decide where to take their career, want to change their specialism or move into a new field, or want to plan their professional growth. Our aim is not to decide for you, but to help you shape a clearer career direction by finding the right questions.",
+    "trainingTitle": "Training and development programmes",
+    "trainingText": "We run training focused on both the technical and the personal skills today’s workplace demands. We design practice-based programmes in communication, leadership, teamwork, presentation skills, Excel and other professional skills.",
+    "growthTitle": "Professional and personal growth",
+    "growthText": "For us, growth is not only about learning a new skill. Knowing yourself, discovering your potential, building on your strengths, working on your weaknesses and adapting to a changing job market are also an important part of the journey.",
+    "beliefsTitle": "What do we believe in?",
+    "beliefsP1": "We believe everyone has the potential to grow. Sometimes all it takes to reach the next stage is the right direction, the right resources and someone by your side to show the way.",
+    "beliefsP2": "Next Stage Academy exists to provide exactly that support.",
+    "beliefsP3": "Our goal is not just to share information, but to build a learning environment where people can apply what they learn, get to know themselves better and take real steps in their careers.",
+    "closingText": "Whether you are writing your first CV, preparing for an interview, choosing your career direction or looking to build on the skills you have, Next Stage Academy can be where the road to your next stage begins.",
+    "closingLead": "Because the next stage doesn’t come by chance.",
+    "motto1": "Learn.",
+    "motto2": "Grow.",
+    "motto3": "Apply.",
+    "motto4": "Step into the next stage."
   }
 }
