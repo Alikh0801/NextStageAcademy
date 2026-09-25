@@ -7,3 +7,10 @@ export const THEME_STORAGE_KEY = 'theme'
  * Defolt açıq rejimdir — sistem ayarına baxmırıq.
  */
 export const THEME_INIT_SCRIPT = `try{if(localStorage.getItem('${THEME_STORAGE_KEY}')==='dark')document.documentElement.classList.add('dark')}catch(e){}`
+
+/**
+ * Skrol animasiyaları üçün `js-reveal` klassını qoyur (bax: globals.css).
+ * Ehtiyat: React 4 saniyəyə hidratasiya olmasa klass götürülür ki, məzmun
+ * gizli qalmasın.
+ */
+export const REVEAL_INIT_SCRIPT = `(function(d){d.classList.add('js-reveal');setTimeout(function(){if(!window.__revealReady)d.classList.remove('js-reveal')},4000)})(document.documentElement)`

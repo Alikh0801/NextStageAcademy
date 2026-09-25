@@ -73,7 +73,7 @@ export function LocaleSwitcher({ className }: { className?: string }) {
       {open && (
         <ul
           role="listbox"
-          className="absolute right-0 top-full z-50 mt-2 min-w-40 overflow-hidden rounded-xl border border-ink-100 bg-white py-1 shadow-lg shadow-ink-900/5 dark:border-white/10 dark:bg-ink-900 dark:shadow-black/30"
+          className="absolute right-0 top-full z-50 mt-2 min-w-40 origin-top-right animate-pop-in overflow-hidden rounded-xl border border-ink-100 bg-white py-1 shadow-lg shadow-ink-900/5 dark:border-white/10 dark:bg-ink-900 dark:shadow-black/30"
         >
           {routing.locales.map((code) => (
             <li key={code}>

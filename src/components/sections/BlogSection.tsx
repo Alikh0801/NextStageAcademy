@@ -3,6 +3,7 @@ import { getLocale, getTranslations } from 'next-intl/server'
 import { ArrowRight } from 'lucide-react'
 import { Link } from '@/i18n/navigation'
 import { connectDB } from '@/lib/db'
+import { reveal } from '@/lib/motion'
 import { Post, t as pick, type Locale } from '@/models'
 
 type BlogCard = {
@@ -56,7 +57,7 @@ export async function BlogSection() {
     // Alt boşluq kiçikdir — altındakı ContactBanner eyni fonda davam edir.
     <section className="bg-ink-50 pb-10 pt-16 lg:pb-12 lg:pt-20 dark:bg-ink-900">
       <div className="container-page">
-        <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-3">
+        <div {...reveal()} className="flex flex-wrap items-end justify-between gap-x-6 gap-y-3">
           <div>
             <h2 className="text-3xl lg:text-4xl">{t('title')}</h2>
             <p className="mt-2 text-ink-500 dark:text-ink-300">{t('subtitle')}</p>
@@ -64,24 +65,27 @@ export async function BlogSection() {
 
           <Link
             href="/bloq"
-            className="inline-flex items-center gap-2 text-sm font-medium text-brand-600 transition-colors hover:text-brand-700 dark:text-brand-300 dark:hover:text-brand-200"
+            className="group inline-flex items-center gap-2 text-sm font-medium text-brand-600 transition-colors hover:text-brand-700 dark:text-brand-300 dark:hover:text-brand-200"
           >
             {t('viewAll')}
-            <ArrowRight className="size-4" aria-hidden />
+            <ArrowRight
+              className="size-4 transition-[translate] duration-300 group-hover:translate-x-1"
+              aria-hidden
+            />
           </Link>
         </div>
 
         {posts.length === 0 ? (
-          <p className="mt-10 rounded-2xl border border-dashed border-ink-200 bg-white px-6 py-12 text-center text-sm text-ink-400 dark:border-white/15 dark:bg-ink-950">
+          <p {...reveal(1)} className="mt-10 rounded-2xl border border-dashed border-ink-200 bg-white px-6 py-12 text-center text-sm text-ink-400 dark:border-white/15 dark:bg-ink-950">
             {t('empty')}
           </p>
         ) : (
           <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {posts.map((post) => (
-              <li key={post.slug}>
+            {posts.map((post, i) => (
+              <li key={post.slug} {...reveal(i + 1)}>
                 <Link
                   href={{ pathname: '/bloq/[slug]', params: { slug: post.slug } }}
-                  className="group flex h-full flex-col overflow-hidden rounded-2xl border border-ink-100 bg-white transition-shadow hover:shadow-lg hover:shadow-ink-900/5 dark:border-white/10 dark:bg-ink-950 dark:hover:shadow-black/40"
+                  className="group flex h-full flex-col overflow-hidden rounded-2xl border border-ink-100 bg-white transition-[translate,box-shadow] duration-300 ease-(--ease-smooth) hover:-translate-y-1 hover:shadow-xl hover:shadow-ink-900/10 dark:border-white/10 dark:bg-ink-950 dark:hover:shadow-black/40"
                 >
                   <div className="relative aspect-[16/10] bg-brand-100 dark:bg-brand-500/15">
                     {post.coverImage && (
@@ -90,7 +94,7 @@ export async function BlogSection() {
                         alt=""
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
-                        className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                        className="object-cover transition-[scale] duration-500 ease-(--ease-smooth) group-hover:scale-105"
                       />
                     )}
                   </div>

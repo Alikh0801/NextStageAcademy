@@ -4,8 +4,9 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { Footer } from '@/components/layout/Footer'
 import { Header } from '@/components/layout/Header'
+import { MotionEffects } from '@/components/layout/MotionEffects'
 import { routing } from '@/i18n/routing'
-import { THEME_INIT_SCRIPT } from '@/lib/theme'
+import { REVEAL_INIT_SCRIPT, THEME_INIT_SCRIPT } from '@/lib/theme'
 import { inter, poppins } from '../fonts'
 import '../globals.css'
 
@@ -51,12 +52,14 @@ export default async function LocaleLayout({
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+        <script dangerouslySetInnerHTML={{ __html: REVEAL_INIT_SCRIPT }} />
       </head>
       <body className="flex min-h-full flex-col">
         <NextIntlClientProvider>
           <Header />
           {children}
           <Footer />
+          <MotionEffects />
         </NextIntlClientProvider>
       </body>
     </html>

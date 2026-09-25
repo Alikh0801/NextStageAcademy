@@ -10,7 +10,9 @@ import {
 } from 'lucide-react'
 import { PageHero } from '@/components/sections/PageHero'
 import { WhatsAppIcon } from '@/components/ui/icons/WhatsAppIcon'
+import { CARD_HOVER, reveal } from '@/lib/motion'
 import { CONTACT, whatsappHref } from '@/lib/site'
+import { cn } from '@/lib/utils'
 
 export async function generateMetadata({
   params,
@@ -57,7 +59,7 @@ export default async function AboutPage({
 
       <section className="bg-white py-14 lg:py-20 dark:bg-ink-950">
         <div className="container-page">
-          <div className="mx-auto max-w-3xl border-l-4 border-brand-500 pl-6 sm:pl-8">
+          <div {...reveal()} className="mx-auto max-w-3xl border-l-4 border-brand-500 pl-6 sm:pl-8">
             <p className="text-lg font-medium leading-relaxed text-ink-800 sm:text-xl dark:text-ink-100">
               {t('introP1')}
             </p>
@@ -70,16 +72,20 @@ export default async function AboutPage({
 
       <section className="bg-ink-50 py-16 lg:py-20 dark:bg-ink-900">
         <div className="container-page">
-          <div className="mx-auto max-w-2xl text-center">
+          <div {...reveal()} className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl lg:text-4xl">{t('servicesTitle')}</h2>
             <p className="mt-3 text-ink-500 dark:text-ink-300">{t('servicesLead')}</p>
           </div>
 
           <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:mt-12 lg:grid-cols-3">
-            {SERVICES.map(({ icon: Icon, key }) => (
+            {SERVICES.map(({ icon: Icon, key }, i) => (
               <li
                 key={key}
-                className="rounded-2xl border border-ink-100 bg-white p-6 lg:p-7 dark:border-white/10 dark:bg-ink-950"
+                {...reveal(i)}
+                className={cn(
+                  'rounded-2xl border border-ink-100 bg-white p-6 lg:p-7 dark:border-white/10 dark:bg-ink-950',
+                  CARD_HOVER,
+                )}
               >
                 <span className="flex size-12 items-center justify-center rounded-xl bg-brand-100 text-brand-600 dark:bg-brand-500/15 dark:text-brand-300">
                   <Icon className="size-6" aria-hidden />
@@ -92,7 +98,10 @@ export default async function AboutPage({
             ))}
 
             {/* Şəbəkənin altıncı xanası — əlaqəyə çağırış */}
-            <li className="flex flex-col rounded-2xl bg-gradient-to-br from-brand-600 to-brand-800 p-6 text-white lg:p-7">
+            <li
+              {...reveal(SERVICES.length)}
+              className="flex flex-col rounded-2xl bg-gradient-to-br from-brand-600 to-brand-800 p-6 text-white transition-[translate,box-shadow] duration-300 ease-(--ease-smooth) hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-900/30 lg:p-7"
+            >
               <span className="flex size-12 items-center justify-center rounded-xl bg-white/15">
                 <WhatsAppIcon className="size-6" />
               </span>
@@ -106,10 +115,13 @@ export default async function AboutPage({
                 href={whatsappHref(CONTACT.phone)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 inline-flex items-center gap-2 self-start rounded-full bg-white px-5 py-2.5 text-sm font-medium text-brand-700 transition-opacity hover:opacity-90 lg:mt-auto"
+                className="group mt-6 inline-flex items-center gap-2 self-start rounded-full bg-white px-5 py-2.5 text-sm font-medium text-brand-700 transition-opacity hover:opacity-90 lg:mt-auto"
               >
                 {tContact('bannerCta')}
-                <ArrowRight className="size-4" aria-hidden />
+                <ArrowRight
+                  className="size-4 transition-[translate] duration-300 group-hover:translate-x-1"
+                  aria-hidden
+                />
               </a>
             </li>
           </ul>
@@ -118,9 +130,11 @@ export default async function AboutPage({
 
       <section className="bg-white py-16 lg:py-24 dark:bg-ink-950">
         <div className="container-page grid gap-8 lg:grid-cols-12 lg:gap-12">
-          <h2 className="text-3xl lg:col-span-4 lg:text-4xl">{t('beliefsTitle')}</h2>
+          <h2 {...reveal()} className="text-3xl lg:col-span-4 lg:text-4xl">
+            {t('beliefsTitle')}
+          </h2>
 
-          <div className="space-y-5 lg:col-span-8">
+          <div {...reveal(1, 120)} className="space-y-5 lg:col-span-8">
             <p className="text-lg font-medium leading-relaxed text-ink-800 sm:text-xl dark:text-ink-100">
               {t('beliefsP1')}
             </p>
@@ -132,10 +146,10 @@ export default async function AboutPage({
 
       <section className="bg-gradient-to-br from-brand-700 via-brand-800 to-brand-900 py-16 text-center lg:py-24">
         <div className="container-page">
-          <p className="mx-auto max-w-3xl leading-relaxed text-white/80 sm:text-lg">
+          <p {...reveal()} className="mx-auto max-w-3xl leading-relaxed text-white/80 sm:text-lg">
             {t('closingText')}
           </p>
-          <h2 className="mt-8 text-3xl text-white lg:text-4xl">
+          <h2 {...reveal(1)} className="mt-8 text-3xl text-white lg:text-4xl">
             {t('closingLead')}
           </h2>
 
@@ -145,6 +159,7 @@ export default async function AboutPage({
               return (
                 <li
                   key={key}
+                  {...reveal(index + 2, 90)}
                   className={
                     last
                       ? 'rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-brand-800 sm:text-base'

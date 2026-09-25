@@ -8,6 +8,7 @@ import {
   Users,
 } from 'lucide-react'
 import { Link } from '@/i18n/navigation'
+import { reveal } from '@/lib/motion'
 import { ExcelIcon } from '@/components/ui/icons/ExcelIcon'
 import type { StaticPathname } from '@/lib/nav'
 
@@ -39,13 +40,13 @@ export async function CategoryStrip() {
     <section className="bg-white py-12 lg:py-16 dark:bg-ink-950">
       <div className="container-page">
         <ul className="grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-3 lg:grid-cols-6">
-          {ITEMS.map(({ icon: Icon, titleKey, textKey, href }) => (
-            <li key={titleKey}>
+          {ITEMS.map(({ icon: Icon, titleKey, textKey, href }, i) => (
+            <li key={titleKey} {...reveal(i, 70)}>
               <Link
                 href={href}
                 className="group flex flex-col items-center text-center"
               >
-                <span className="flex size-16 items-center justify-center rounded-full bg-brand-100 transition-colors group-hover:bg-brand-200 dark:bg-brand-500/15 dark:group-hover:bg-brand-500/25">
+                <span className="flex size-16 items-center justify-center rounded-full bg-brand-100 transition-[background-color,scale,box-shadow] duration-300 ease-(--ease-smooth) group-hover:scale-110 group-hover:bg-brand-200 group-hover:shadow-lg group-hover:shadow-brand-600/15 dark:bg-brand-500/15 dark:group-hover:bg-brand-500/25">
                   <Icon className="size-7 text-brand-600 dark:text-brand-300" aria-hidden />
                 </span>
 

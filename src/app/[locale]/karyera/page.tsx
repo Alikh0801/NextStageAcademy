@@ -16,6 +16,7 @@ import {
 } from 'lucide-react'
 import { PageHero } from '@/components/sections/PageHero'
 import { WhatsAppIcon } from '@/components/ui/icons/WhatsAppIcon'
+import { CARD_HOVER, reveal } from '@/lib/motion'
 import { CONTACT, whatsappHref } from '@/lib/site'
 import { cn } from '@/lib/utils'
 
@@ -72,17 +73,22 @@ export default async function CareerPage({
 
       <section className="bg-white pb-6 pt-14 lg:pt-20 dark:bg-ink-950">
         <div className="container-page">
-          <p className="mx-auto max-w-3xl border-l-4 border-brand-500 pl-6 text-lg font-medium leading-relaxed text-ink-800 sm:pl-8 sm:text-xl dark:text-ink-100">
+          <p
+            {...reveal()}
+            className="mx-auto max-w-3xl border-l-4 border-brand-500 pl-6 text-lg font-medium leading-relaxed text-ink-800 sm:pl-8 sm:text-xl dark:text-ink-100">
             {t('intro')}
           </p>
 
           {/* Uzun səhifədə istədiyi xidmətə birbaşa keçmək üçün */}
-          <nav className="mx-auto mt-10 flex max-w-4xl flex-wrap justify-center gap-2.5">
+          <nav
+            {...reveal(1, 120)}
+            className="mx-auto mt-10 flex max-w-4xl flex-wrap justify-center gap-2.5"
+          >
             {SERVICES.map(({ id, key, icon: Icon }) => (
               <a
                 key={id}
                 href={`#${id}`}
-                className="inline-flex items-center gap-2 rounded-full border border-ink-200 px-4 py-2 text-sm text-ink-700 transition-colors hover:border-brand-400 hover:text-brand-700 dark:border-white/15 dark:text-ink-200 dark:hover:border-brand-300 dark:hover:text-brand-200"
+                className="inline-flex items-center gap-2 rounded-full border border-ink-200 px-4 py-2 text-sm text-ink-700 transition-[color,border-color,translate] duration-300 hover:-translate-y-0.5 hover:border-brand-400 hover:text-brand-700 dark:border-white/15 dark:text-ink-200 dark:hover:border-brand-300 dark:hover:text-brand-200"
               >
                 <Icon className="size-4 text-brand-500 dark:text-brand-300" aria-hidden />
                 {t(`${key}.title`)}
@@ -131,7 +137,8 @@ export default async function CareerPage({
           {steps.map((step, i) => (
             <li
               key={step.title}
-              className="rounded-2xl border border-ink-100 p-5 dark:border-white/10"
+              {...reveal(i, 90)}
+              className={cn('rounded-2xl border border-ink-100 p-5 dark:border-white/10', CARD_HOVER)}
             >
               <span className="font-display text-2xl font-bold text-brand-500 dark:text-brand-300">
                 {String(i + 1).padStart(2, '0')}
@@ -165,9 +172,10 @@ export default async function CareerPage({
         <p className="leading-relaxed text-ink-600 dark:text-ink-300">{t('linkedin.text')}</p>
         <ListTitle>{t('linkedin.listTitle')}</ListTitle>
         <ul className="flex flex-wrap gap-2.5">
-          {list('linkedin.items').map((item) => (
+          {list('linkedin.items').map((item, i) => (
             <li
               key={item}
+              {...reveal(i, 60)}
               className="rounded-full bg-brand-50 px-4 py-2 text-sm font-medium text-brand-700 dark:bg-brand-500/15 dark:text-brand-200"
             >
               {item}
@@ -181,7 +189,9 @@ export default async function CareerPage({
 
       <section className="bg-ink-50 py-16 lg:py-20 dark:bg-ink-900">
         <div className="container-page">
-          <h2 className="text-center text-3xl lg:text-4xl">{t('benefitsTitle')}</h2>
+          <h2 {...reveal()} className="text-center text-3xl lg:text-4xl">
+            {t('benefitsTitle')}
+          </h2>
 
           <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:mt-12 lg:grid-cols-4">
             {benefits.map((benefit, i) => {
@@ -189,7 +199,11 @@ export default async function CareerPage({
               return (
                 <li
                   key={benefit.title}
-                  className="rounded-2xl border border-ink-100 bg-white p-6 dark:border-white/10 dark:bg-ink-950"
+                  {...reveal(i)}
+                  className={cn(
+                    'rounded-2xl border border-ink-100 bg-white p-6 dark:border-white/10 dark:bg-ink-950',
+                    CARD_HOVER,
+                  )}
                 >
                   <span className="flex size-12 items-center justify-center rounded-xl bg-brand-100 text-brand-600 dark:bg-brand-500/15 dark:text-brand-300">
                     <Icon className="size-6" aria-hidden />
@@ -207,8 +221,13 @@ export default async function CareerPage({
 
       <section className="bg-gradient-to-br from-brand-700 via-brand-800 to-brand-900 py-16 text-center lg:py-24">
         <div className="container-page">
-          <h2 className="text-3xl text-white lg:text-4xl">{t('closingTitle')}</h2>
-          <p className="mx-auto mt-5 max-w-3xl leading-relaxed text-white/80 sm:text-lg">
+          <h2 {...reveal()} className="text-3xl text-white lg:text-4xl">
+            {t('closingTitle')}
+          </h2>
+          <p
+            {...reveal(1)}
+            className="mx-auto mt-5 max-w-3xl leading-relaxed text-white/80 sm:text-lg"
+          >
             {t('closingText')}
           </p>
 
@@ -216,7 +235,7 @@ export default async function CareerPage({
             {journey.map((step, i) => {
               const last = i === journey.length - 1
               return (
-                <li key={step} className="flex items-center gap-3">
+                <li key={step} {...reveal(i + 2, 100)} className="flex items-center gap-3">
                   <span
                     className={
                       last
@@ -241,7 +260,8 @@ export default async function CareerPage({
             href={whatsappHref(CONTACT.phone)}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-10 inline-flex items-center gap-2.5 rounded-full bg-white px-7 py-3.5 text-[15px] font-medium text-brand-800 shadow-lg shadow-black/10 transition-opacity hover:opacity-90"
+            {...reveal(journey.length + 2, 100)}
+            className="mt-10 inline-flex items-center gap-2.5 rounded-full bg-white px-7 py-3.5 text-[15px] font-medium text-brand-800 shadow-lg shadow-black/10 transition-[translate,box-shadow] duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/20"
           >
             <WhatsAppIcon className="size-5" />
             {tContact('bannerCta')}
@@ -282,7 +302,7 @@ function ServiceSection({
     >
       <div className="container-page grid gap-8 lg:grid-cols-12 lg:gap-12">
         <div className="lg:col-span-5">
-          <div className="lg:sticky lg:top-28">
+          <div {...reveal()} className="lg:sticky lg:top-28">
             <div className="flex items-center gap-3">
               <span className="flex size-12 items-center justify-center rounded-xl bg-brand-100 text-brand-600 dark:bg-brand-500/15 dark:text-brand-300">
                 <Icon className="size-6" aria-hidden />
@@ -298,7 +318,9 @@ function ServiceSection({
           </div>
         </div>
 
-        <div className="lg:col-span-7">{children}</div>
+        <div {...reveal(1, 120)} className="lg:col-span-7">
+          {children}
+        </div>
       </div>
     </section>
   )
