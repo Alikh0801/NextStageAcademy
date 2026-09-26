@@ -1,6 +1,6 @@
 import { Schema } from 'mongoose'
 
-export const LOCALES = ['az', 'ru', 'en'] as const
+export const LOCALES = ['az', 'ru', 'en', 'tr'] as const
 export type Locale = (typeof LOCALES)[number]
 
 /** Çoxdilli mətn. Azərbaycan dili məcburidir, digərləri boş qala bilər. */
@@ -8,6 +8,7 @@ export interface Translated {
   az: string
   ru?: string
   en?: string
+  tr?: string
 }
 
 /** Sub-sənəd kimi yerləşir, ona görə öz `_id`-si olmamalıdır. */
@@ -17,6 +18,7 @@ export function translatedSchema(required = true) {
       az: { type: String, required, trim: true },
       ru: { type: String, trim: true },
       en: { type: String, trim: true },
+      tr: { type: String, trim: true },
     },
     { _id: false },
   )

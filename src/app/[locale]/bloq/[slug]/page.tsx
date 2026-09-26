@@ -49,14 +49,14 @@ export default async function BlogPostPage({
     : null
 
   return (
-    <main className="flex-1 bg-white py-12 lg:py-16">
+    <main className="flex-1 bg-white py-12 lg:py-16 dark:bg-ink-950">
       <article className="container-page max-w-3xl">
         <h1 className="text-3xl lg:text-4xl">{pick(post.title, locale as Locale)}</h1>
 
         {date && <p className="mt-3 text-sm text-ink-400">{date}</p>}
 
         {post.coverImage && (
-          <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-2xl bg-brand-100">
+          <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-2xl bg-brand-100 dark:bg-brand-500/15">
             <Image
               src={post.coverImage}
               alt=""
@@ -68,7 +68,7 @@ export default async function BlogPostPage({
           </div>
         )}
 
-        <div className="mt-8 whitespace-pre-line leading-relaxed text-ink-700">
+        <div className="mt-8 whitespace-pre-line leading-relaxed text-ink-700 dark:text-ink-200">
           {pick(post.content, locale as Locale)}
         </div>
       </article>

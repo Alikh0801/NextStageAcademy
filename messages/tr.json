@@ -1,0 +1,248 @@
+{
+  "Meta": {
+    "siteName": "NextStage Academy",
+    "tagline": "Bir sonraki aşamanız burada başlıyor",
+    "description": "Eğitimler, kariyer danışmanlığı ve faydalı içeriklerle profesyonel gelişim yolunda yanındayız."
+  },
+  "Nav": {
+    "home": "Ana sayfa",
+    "about": "Hakkımızda",
+    "courses": "Eğitimler",
+    "career": "CV ve Kariyer Desteği",
+    "blog": "Blog",
+    "contact": "İletişim",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "language": "Dil",
+    "darkMode": "Karanlık mod"
+  },
+  "Hero": {
+    "eyebrow": "BİR SONRAKİ ADIM",
+    "title": "Kariyerini bizimle inşa et!",
+    "subtitle": "Eğitimler, kariyer danışmanlığı ve faydalı içeriklerle profesyonel gelişim yolunda yanındayız.",
+    "primaryCta": "Eğitimlere göz at",
+    "secondaryCta": "Hakkımızda",
+    "badgeGrowth": "Profesyonel gelişim",
+    "badgeCommunity": "Güçlü topluluk",
+    "badgeFuture": "Daha iyi bir gelecek"
+  },
+  "Courses": {
+    "featuredTitle": "Popüler eğitimlerimiz",
+    "featuredSubtitle": "Becerilerini geliştir, geleceğine yatırım yap!",
+    "viewAll": "Tümünü gör",
+    "allTitle": "Eğitimler",
+    "empty": "Henüz eğitim eklenmedi.",
+    "duration": "{hours} saat",
+    "price": "{price} ₼",
+    "free": "Ücretsiz",
+    "level": "Seviye",
+    "levelBEGINNER": "Başlangıç",
+    "levelINTERMEDIATE": "Orta",
+    "levelADVANCED": "İleri",
+    "startDate": "Başlangıç tarihi",
+    "instructor": "Eğitmen",
+    "enroll": "Başvur"
+  },
+  "Enrollment": {
+    "title": "Eğitime başvuru",
+    "fullName": "Ad soyad",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "note": "Ek not",
+    "submit": "Başvuruyu gönder",
+    "success": "Başvurun alındı. En kısa sürede seninle iletişime geçeceğiz.",
+    "duplicate": "Bu eğitime zaten başvurdun.",
+    "error": "Başvuru gönderilemedi. Lütfen biraz sonra tekrar dene."
+  },
+  "Blog": {
+    "title": "Blog",
+    "subtitle": "Faydalı makaleler, öneriler ve kariyer hikâyeleri.",
+    "viewAll": "Tümünü gör",
+    "empty": "Henüz yazı eklenmedi.",
+    "readMore": "Oku"
+  },
+  "Career": {
+    "title": "CV ve Kariyer Desteği",
+    "subtitle": "Profesyonel CV ve kariyer danışmanlığı hizmetleri.",
+    "uploadCv": "CV dosyanı yükle",
+    "submit": "Başvuru gönder",
+    "heroTitle": "Kariyerinizi şansa bırakmayın.",
+    "heroLead": "İş arayışı yalnızca ilan bulmaktan ibaret değildir. Doğru bir CV, doğru bir sunum, etkili bir mülakat stratejisi ve net bir kariyer yönü iş arama sürecinin önemli parçalarıdır.",
+    "intro": "Next Stage Academy olarak adaylara iş arayışının farklı aşamalarında profesyonel kariyer desteği sunuyoruz. Amacımız sizin yerinize karar vermek değil; deneyiminizi ve potansiyelinizi daha doğru sunmanıza ve kariyer hedeflerinize daha sistemli bir şekilde yaklaşmanıza destek olmaktır.",
+    "cv": {
+      "title": "Profesyonel CV hazırlama",
+      "subtitle": "CV’niz yalnızca bilgileriniz değil, profesyonel sunumunuzdur.",
+      "text": "CV’yi yalnızca tasarlanmış bir belge olarak hazırlamıyoruz. Deneyimlerinizi, becerilerinizi ve başarılarınızı analiz ederek bunları daha yapılandırılmış ve işveren için anlaşılır bir biçimde sunuyoruz.",
+      "listTitle": "CV hazırlarken:",
+      "items": [
+        "Eğitim ve iş deneyiminizi analiz ediyoruz",
+        "Pozisyonlar bazında temel sorumlulukları ve başarıları belirliyoruz",
+        "Becerilerinizi yapılandırıyoruz",
+        "Profesyonel profil ve kariyer özeti hazırlıyoruz",
+        "CV’yi somut kariyer yönünüze uyarlıyoruz",
+        "Bilgilerin doğru ve okunaklı bir yapıda yer almasını sağlıyoruz",
+        "Modern ve profesyonel bir CV formatı kullanıyoruz",
+        "CV’nin işveren tarafından hızlı okunacağını göz önünde bulunduruyoruz"
+      ],
+      "resultLabel": "Sonuç:",
+      "result": "Deneyiminizi ve potansiyelinizi daha net gösteren, profesyonel ve kariyer hedefinize uygun bir CV."
+    },
+    "tailored": {
+      "title": "İlana uygun CV",
+      "subtitle": "Her ilan için aynı CV’yi kullanmak zorunda değilsiniz.",
+      "p1": "Farklı pozisyonlar farklı beceri ve deneyimleri ön plana çıkarır. Bu nedenle CV’nin başvurduğunuz pozisyona uyarlanması önemlidir.",
+      "p2": "İlanın gerekliliklerini analiz ediyor, deneyiminizle eşleştiriyor ve CV’de o pozisyona en uygun bilgilerin daha etkili şekilde vurgulanmasına yardımcı oluyoruz.",
+      "p3": "Böylece CV’niz yalnızca “Ben kimim?” sorusuna değil, “Bu pozisyon için ne sunabilirim?” sorusuna da yanıt verir."
+    },
+    "interview": {
+      "title": "Mülakata hazırlık",
+      "subtitle": "CV’niz kapıyı açar, mülakat ise kendinizi gösterme fırsatı yaratır.",
+      "text": "Mülakata hazırlık hizmetimiz, adayların gerçek mülakat sürecine daha hazırlıklı ve özgüvenli yaklaşmalarına destek olmak için tasarlandı.",
+      "listTitle": "Hazırlık sürecinde:",
+      "steps": [
+        {
+          "title": "Mülakat sorularını analiz ediyoruz",
+          "text": "Pozisyona ve adayın deneyimine uygun olası soruları belirliyoruz."
+        },
+        {
+          "title": "Yanıt stratejisi oluşturuyoruz",
+          "text": "Sorulara yalnızca yanıt vermeyi değil, deneyim ve becerileri yapılandırılmış bir şekilde sunmayı öğreniyoruz."
+        },
+        {
+          "title": "Deneme mülakatı yapıyoruz",
+          "text": "Gerçek mülakat formatına yakın bir simülasyonla adayın yanıtları, iletişimi ve sunumu üzerinde çalışıyoruz."
+        },
+        {
+          "title": "Geri bildirim veriyoruz",
+          "text": "Güçlü yönleri ve geliştirilmesi faydalı olan noktaları belirleyerek somut öneriler sunuyoruz."
+        }
+      ]
+    },
+    "consulting": {
+      "title": "Kariyer danışmanlığı",
+      "subtitle": "“Bir sonraki adımım ne olmalı?”",
+      "text": "Kariyer yönünü değiştirmek, yeni bir alana geçmek, iş aramaya başlamak ya da mevcut kariyerinde gelişmek isteyen kişilere bireysel kariyer danışmanlığı sunuyoruz.",
+      "listTitle": "Danışmanlık sırasında:",
+      "items": [
+        "Kariyer hedeflerinizi belirliyoruz",
+        "Mevcut deneyim ve becerilerinizi değerlendiriyoruz",
+        "Geliştirilmesi gereken yetkinlikleri belirliyoruz",
+        "Size uygun kariyer yönlerini konuşuyoruz",
+        "İş arayışı için olası stratejileri gözden geçiriyoruz",
+        "Sonraki adımlar için kişisel bir gelişim yönü oluşturuyoruz"
+      ]
+    },
+    "linkedin": {
+      "title": "LinkedIn ve profesyonel profil",
+      "subtitle": "İş arayışı CV ile bitmez.",
+      "text": "Günümüz kariyer ortamında profesyonel çevrim içi görünürlük de önemli bir rol oynar. LinkedIn profilinizin daha yapılandırılmış ve profesyonel bir şekilde sunulmasına destek oluyoruz.",
+      "listTitle": "Profilinizin şu bölümlerinin daha net ve amaca yönelik sunulması üzerinde çalışıyoruz:",
+      "items": [
+        "“About” bölümü",
+        "İş deneyimi",
+        "Beceriler",
+        "Profesyonel başlık",
+        "Kariyer yönü"
+      ],
+      "outro": ""
+    },
+    "benefitsTitle": "Hizmetimiz size ne kazandırır?",
+    "benefits": [
+      {
+        "title": "Daha profesyonel bir sunum",
+        "text": "Deneyim ve becerilerinizi daha doğru göstermek."
+      },
+      {
+        "title": "Daha net bir kariyer yönü",
+        "text": "Bir sonraki adımınızı daha sistemli belirlemek."
+      },
+      {
+        "title": "Mülakata daha hazırlıklı yaklaşım",
+        "text": "Kendinizi ve deneyiminizi daha etkili ifade etmek."
+      },
+      {
+        "title": "Kişisel yaklaşım",
+        "text": "Hazır şablon yerine deneyiminize ve hedeflerinize uygun destek."
+      }
+    ],
+    "closingTitle": "Bir sonraki aşamanız nereden başlıyor?",
+    "closingText": "İster ilk işinizi arıyor, ister daha iyi bir kariyer fırsatına geçmek istiyor, ister profesyonel yönünüzü değiştirmeyi düşünüyor olun — Next Stage Academy kariyer yolunuzun bir sonraki aşamasını daha sistemli kurmanıza destek olur.",
+    "journey": [
+      "CV’ni hazırla",
+      "Mülakata hazırlan",
+      "Kariyerini planla",
+      "Bir sonraki aşamaya geç"
+    ]
+  },
+  "Contact": {
+    "bannerTitle": "Sorun mu var? Bize yaz!",
+    "bannerSubtitle": "Kariyer ve eğitimlerle ilgili sorularını bizimle paylaş.",
+    "bannerCta": "İletişime geç",
+    "title": "İletişim",
+    "fullName": "Ad soyad",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "subject": "Konu",
+    "message": "Mesajın",
+    "submit": "Gönder",
+    "success": "Mesajın gönderildi. Teşekkür ederiz!",
+    "error": "Mesaj gönderilemedi. Lütfen biraz sonra tekrar dene."
+  },
+  "Footer": {
+    "quickLinks": "Hızlı bağlantılar",
+    "contactUs": "Bize ulaşın",
+    "address": "Bakü, Azerbaycan",
+    "rights": "© {year}. Tüm hakları saklıdır."
+  },
+  "Common": {
+    "loading": "Yükleniyor...",
+    "notFound": "Sayfa bulunamadı",
+    "notFoundHint": "Aradığın sayfa mevcut değil veya taşınmış.",
+    "backHome": "Ana sayfaya dön",
+    "required": "Bu alan zorunludur",
+    "invalidEmail": "E-posta adresi geçersiz",
+    "comingSoon": "Bu sayfa hazırlanıyor."
+  },
+  "Categories": {
+    "hrTitle": "İK",
+    "hrText": "İnsan kaynakları çözümleri",
+    "excelTitle": "Excel",
+    "excelText": "Pratik beceriler",
+    "softTitle": "Soft Skills",
+    "softText": "Kişisel gelişim",
+    "coursesTitle": "Eğitimler",
+    "coursesText": "Katıl, fark yarat",
+    "careerTitle": "CV ve Kariyer",
+    "careerText": "Kariyerini planla",
+    "resourcesTitle": "Faydalı Kaynaklar",
+    "resourcesText": "Makaleler ve kaynaklar"
+  },
+  "About": {
+    "title": "Geleceğin için bir sonraki aşamaya geç.",
+    "lead": "Next Stage Academy, insanların profesyonel gelişimine, kariyer yollarını daha doğru yönlendirmelerine ve sahip oldukları potansiyeli gerçek becerilere dönüştürmelerine destek olmak için kurulmuş bir gelişim platformudur.",
+    "introP1": "Kariyerin yalnızca bir iş bulmaktan ibaret olmadığına inanıyoruz. Doğru bir kariyer yolu oluşturmak; kendini tanımayı, becerilerini doğru şekilde sunmayı, yeni bilgiler edinmeyi, gelişim yönünü belirlemeyi ve sahip olunan fırsatları doğru kullanmayı gerektirir.",
+    "introP2": "İşte bu yüzden Next Stage Academy’de yalnızca eğitim sunmuyoruz. Kariyer yolunun farklı aşamalarında ihtiyaç duyulan bilgi, beceri ve desteği bir araya getiriyoruz.",
+    "servicesTitle": "Kariyer yolunda size nasıl destek oluyoruz?",
+    "servicesLead": "İş arayışının ilk aşamasından profesyonel gelişimin sonraki adımlarına kadar çeşitli hizmetler sunuyoruz.",
+    "cvTitle": "CV hazırlama ve kariyer belgeleri",
+    "cvText": "Deneyim ve becerilerinizi doğru şekilde sunan, ilanın gerekliliklerine uygun ve profesyonel görünen bir CV hazırlamanıza destek oluyoruz. Amacımız yalnızca güzel bir CV oluşturmak değil, deneyiminizi ve potansiyelinizi işveren için daha net ortaya koymaktır.",
+    "interviewTitle": "Mülakata hazırlık",
+    "interviewText": "Mülakatta kendini doğru ifade etmek, sorulara yapılandırılmış yanıtlar vermek, güçlü yönlerini göstermek ve profesyonel iletişim kurmak üzerine çalışıyoruz. Gerçek mülakat örnekleri ve pratik bir yaklaşımla adayların kendine güvenerek hazırlanmasına yardımcı oluyoruz.",
+    "consultingTitle": "Kariyer danışmanlığı",
+    "consultingText": "Kariyerini hangi yönde sürdüreceğine karar vermekte zorlanan, mesleğini değiştirmek, yeni bir alana geçmek ya da profesyonel gelişimini planlamak isteyen kişilere bireysel danışmanlık sunuyoruz. Amacımız sizin yerinize karar vermek değil, doğru soruları belirleyerek daha net bir kariyer yönü oluşturmanıza yardımcı olmaktır.",
+    "trainingTitle": "Eğitim ve gelişim programları",
+    "trainingText": "Günümüz iş dünyasının gerektirdiği hem teknik hem de kişisel becerilerin gelişimine yönelik eğitimler düzenliyoruz. İletişim, liderlik, takım çalışması, sunum becerileri, Excel ve diğer profesyonel beceriler üzerine uygulamaya dayalı programlar hazırlıyoruz.",
+    "growthTitle": "Profesyonel ve kişisel gelişim",
+    "growthText": "Bizim için gelişim yalnızca yeni bir beceri öğrenmek değildir. Kendini tanımak, potansiyelini keşfetmek, güçlü yönlerini geliştirmek, zayıf yönleri üzerinde çalışmak ve değişen iş piyasasına uyum sağlamak da bu yolun önemli bir parçasıdır.",
+    "beliefsTitle": "Neye inanıyoruz?",
+    "beliefsP1": "Her insanın gelişmek için bir potansiyeli olduğuna inanıyoruz. Bazen bir sonraki aşamaya geçmek için yalnızca doğru yön, doğru kaynak ve yanında yol gösterecek bir destek gerekir.",
+    "beliefsP2": "Next Stage Academy tam olarak bu desteği oluşturmak için faaliyet gösteriyor.",
+    "beliefsP3": "Buradaki amacımız insanlara yalnızca bilgi vermek değil; öğrendiklerini uygulayabilecekleri, kendilerini daha iyi tanıyabilecekleri ve kariyerlerinde gerçek adımlar atabilecekleri bir gelişim ortamı oluşturmaktır.",
+    "closingText": "İster ilk CV’nizi hazırlıyor, ister mülakata hazırlanıyor, ister kariyer yönünüzü belirliyor, ister mevcut becerilerinizi geliştirmek istiyor olun — Next Stage Academy bir sonraki aşamanız için yolun başlangıcı olabilir.",
+    "closingLead": "Çünkü bir sonraki aşama tesadüfen gelmez.",
+    "motto1": "Öğren.",
+    "motto2": "Geliş.",
+    "motto3": "Uygula.",
+    "motto4": "Bir sonraki aşamaya geç."
+  }
+}

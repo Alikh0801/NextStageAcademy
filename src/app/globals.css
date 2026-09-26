@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Tünd rejim `<html class="dark">` ilə açılır (bax: src/lib/theme.ts). */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* Əsas bənövşəyi — düymələr, linklər, vurğular */
   --color-brand-50: #f6f4fc;
@@ -30,6 +33,55 @@
   --font-display: var(--font-poppins), var(--font-inter), ui-sans-serif, sans-serif;
 
   --radius-card: 1rem;
+
+  /* Animasiyalar — hamısı eyni yumşaq "ease-out-expo" əyrisi ilə */
+  --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+  --animate-fade-up: fade-up 0.8s var(--ease-smooth) both;
+  --animate-hero-zoom: hero-zoom 2.2s var(--ease-smooth) both;
+  --animate-pop-in: pop-in 0.18s ease-out both;
+  --animate-slide-down: slide-down 0.28s var(--ease-smooth) both;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(22px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes hero-zoom {
+    from {
+      transform: scale(1.07);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes pop-in {
+    from {
+      opacity: 0;
+      transform: translateY(-4px) scale(0.97);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
 }
 
 @layer base {
@@ -43,6 +95,16 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  /* Skrol zolağı və form elementləri də tünd görünsün */
+  .dark {
+    color-scheme: dark;
+  }
+
+  .dark body {
+    background-color: var(--color-ink-950);
+    color: var(--color-ink-200);
+  }
+
   h1,
   h2,
   h3 {
@@ -50,6 +112,41 @@
     font-weight: 700;
     letter-spacing: -0.02em;
     color: var(--color-ink-900);
+  }
+
+  .dark :is(h1, h2, h3) {
+    color: #ffffff;
+  }
+}
+
+/*
+ * Skrolda üzə çıxma. `data-reveal` olan element ekrana girəndə
+ * MotionEffects ona `data-revealed` qoyur. Gizlətmə yalnız `js-reveal`
+ * klassı olanda işləyir — JS işləməsə məzmun görünən qalır.
+ * Keçid (transition) yox, animasiya işlədirik ki, kartların öz hover
+ * keçidlərinə qarışmasın; `transform` animasiya olunur, hover isə
+ * ayrıca `translate` xassəsindədir — ikisi toqquşmur.
+ */
+.js-reveal [data-reveal]:not([data-revealed]) {
+  opacity: 0;
+}
+
+.js-reveal [data-reveal][data-revealed] {
+  animation: fade-up 0.8s var(--ease-smooth) var(--reveal-delay, 0ms) both;
+}
+
+/* Hərəkəti azaltmış istifadəçilər üçün bütün animasiyalar dərhal bitir */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    transition-duration: 0.01ms !important;
   }
 }
 

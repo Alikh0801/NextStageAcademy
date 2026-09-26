@@ -1,13 +1,15 @@
+import type { ComponentType } from 'react'
 import { getTranslations } from 'next-intl/server'
 import {
-  FileSpreadsheet,
-  FileText,
   FileUser,
   GraduationCap,
   Lightbulb,
+  MessagesSquare,
   Users,
 } from 'lucide-react'
 import { Link } from '@/i18n/navigation'
+import { reveal } from '@/lib/motion'
+import { ExcelIcon } from '@/components/ui/icons/ExcelIcon'
 import type { StaticPathname } from '@/lib/nav'
 
 /**
@@ -17,14 +19,15 @@ import type { StaticPathname } from '@/lib/nav'
  * kateqoriya idarəsi qurulanda süzgəcli ünvanlara keçiriləcək.
  */
 const ITEMS: ReadonlyArray<{
-  icon: typeof Users
+  /** Lucide ikonu və ya onun üslubunda çəkilmiş öz ikonumuz (Excel). */
+  icon: ComponentType<{ className?: string }>
   titleKey: string
   textKey: string
   href: StaticPathname
 }> = [
   { icon: Users, titleKey: 'hrTitle', textKey: 'hrText', href: '/telimler' },
-  { icon: FileSpreadsheet, titleKey: 'excelTitle', textKey: 'excelText', href: '/telimler' },
-  { icon: FileText, titleKey: 'softTitle', textKey: 'softText', href: '/telimler' },
+  { icon: ExcelIcon, titleKey: 'excelTitle', textKey: 'excelText', href: '/telimler' },
+  { icon: MessagesSquare, titleKey: 'softTitle', textKey: 'softText', href: '/telimler' },
   { icon: GraduationCap, titleKey: 'coursesTitle', textKey: 'coursesText', href: '/telimler' },
   { icon: FileUser, titleKey: 'careerTitle', textKey: 'careerText', href: '/karyera' },
   { icon: Lightbulb, titleKey: 'resourcesTitle', textKey: 'resourcesText', href: '/bloq' },
@@ -34,20 +37,20 @@ export async function CategoryStrip() {
   const t = await getTranslations('Categories')
 
   return (
-    <section className="bg-white py-12 lg:py-16">
+    <section className="bg-white py-12 lg:py-16 dark:bg-ink-950">
       <div className="container-page">
         <ul className="grid grid-cols-2 gap-x-4 gap-y-10 sm:grid-cols-3 lg:grid-cols-6">
-          {ITEMS.map(({ icon: Icon, titleKey, textKey, href }) => (
-            <li key={titleKey}>
+          {ITEMS.map(({ icon: Icon, titleKey, textKey, href }, i) => (
+            <li key={titleKey} {...reveal(i, 70)}>
               <Link
                 href={href}
                 className="group flex flex-col items-center text-center"
               >
-                <span className="flex size-16 items-center justify-center rounded-full bg-brand-100 transition-colors group-hover:bg-brand-200">
-                  <Icon className="size-7 text-brand-600" aria-hidden />
+                <span className="flex size-16 items-center justify-center rounded-full bg-brand-100 transition-[background-color,scale,box-shadow] duration-300 ease-(--ease-smooth) group-hover:scale-110 group-hover:bg-brand-200 group-hover:shadow-lg group-hover:shadow-brand-600/15 dark:bg-brand-500/15 dark:group-hover:bg-brand-500/25">
+                  <Icon className="size-7 text-brand-600 dark:text-brand-300" aria-hidden />
                 </span>
 
-                <span className="mt-4 text-[15px] font-semibold text-ink-900 transition-colors group-hover:text-brand-700">
+                <span className="mt-4 text-[15px] font-semibold text-ink-900 transition-colors group-hover:text-brand-700 dark:text-white dark:group-hover:text-brand-300">
                   {t(titleKey)}
                 </span>
 

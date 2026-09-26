@@ -11,7 +11,7 @@ yoxdur — müraciətlər qonaq kimi göndərilir. Giriş yalnız admin üçünd
 | Framework | Next.js 16 (App Router) + TypeScript |
 | Stil | Tailwind CSS 4 |
 | Baza | MongoDB Atlas + Mongoose |
-| Çoxdillilik | next-intl — `az` (defolt), `ru`, `en` |
+| Çoxdillilik | next-intl — `az` (defolt), `ru`, `en`, `tr` |
 | Deploy | Vercel |
 
 Layihə yalnız üç platformadan asılıdır: **GitHub**, **Vercel**, **MongoDB Atlas**.
@@ -61,24 +61,25 @@ npm run admin:hash -- 'parol'  # admin parolunun hash-i
 
 ```
 src/
-  app/[locale]/       səhifələr — üç dil üçün SSG
+  app/[locale]/       səhifələr — hər dil üçün SSG
   app/admin/          admin panel — ayrıca root layout, yalnız az dilində
   i18n/               routing (dilə görə tərcümə olunan yollar), navigation, request
   lib/db.ts           Mongoose bağlantısı, serverless üçün keşlənmiş
   lib/admin/          admin sessiyası, parol yoxlaması, cəhd limiti
   models/             Category · Course · Enrollment · Post · Message · Faq · LoginAttempt
   proxy.ts            next-intl + /admin qoruması (Next 16-da `middleware` yox, `proxy`)
-messages/             az.json · ru.json · en.json
+messages/             az.json · ru.json · en.json · tr.json
 ```
 
 ## Bilməli olduqlar
 
 **Çoxdilli mətnlər sənədin içindədir.** Ayrıca tərcümə cədvəli yoxdur —
-hər sahə `{ az, ru, en }` şəklindədir (`src/models/shared.ts`). Dil boşdursa
+hər sahə `{ az, ru, en, tr }` şəklindədir (`src/models/shared.ts`). Dil boşdursa
 `t()` funksiyası Azərbaycan dilinə qayıdır.
 
 **Slug bütün dillərdə eynidir.** Yalnız yol seqmentləri tərcümə olunur:
-`/telimler/excel-telimi` · `/ru/kursy/excel-telimi` · `/en/courses/excel-telimi`.
+`/telimler/excel-telimi` · `/ru/kursy/excel-telimi` · `/en/courses/excel-telimi` ·
+`/tr/egitimler/excel-telimi`.
 Yolların siyahısı `src/i18n/routing.ts` faylındadır.
 
 **Admin sessiyası bazada saxlanmır.** Cookie-də bitmə vaxtı və onun HMAC

@@ -5,9 +5,9 @@ import { useTranslations } from 'next-intl'
 import { Menu, X } from 'lucide-react'
 import { Link, usePathname } from '@/i18n/navigation'
 import { NAV_ITEMS } from '@/lib/nav'
+import { enter } from '@/lib/motion'
 import { cn } from '@/lib/utils'
 import { isActivePath } from './DesktopNav'
-import { LocaleSwitcher } from './LocaleSwitcher'
 
 export function MobileNav() {
   const t = useTranslations('Nav')
@@ -41,7 +41,7 @@ export function MobileNav() {
         aria-expanded={open}
         aria-controls="mobil-menyu"
         aria-label={open ? t('closeMenu') : t('openMenu')}
-        className="flex size-10 items-center justify-center rounded-full text-ink-700 transition-colors hover:bg-brand-50 hover:text-brand-600"
+        className="flex size-10 items-center justify-center rounded-full text-ink-700 transition-colors hover:bg-brand-50 hover:text-brand-600 dark:text-ink-200 dark:hover:bg-white/5 dark:hover:text-brand-300"
       >
         {open ? (
           <X className="size-5" aria-hidden />
@@ -54,10 +54,10 @@ export function MobileNav() {
         <div
           id="mobil-menyu"
           // Header 80px hündürlükdədir — panel onun altından başlayır.
-          className="fixed inset-x-0 bottom-0 top-20 z-40 overflow-y-auto border-t border-ink-100 bg-white"
+          className="fixed inset-x-0 bottom-0 top-20 z-40 animate-slide-down overflow-y-auto border-t border-ink-100 bg-white dark:border-white/10 dark:bg-ink-950"
         >
           <nav className="container-page flex flex-col py-4">
-            {NAV_ITEMS.map(({ href, labelKey }) => {
+            {NAV_ITEMS.map(({ href, labelKey }, index) => {
               const active = isActivePath(pathname, href)
 
               return (
@@ -66,19 +66,18 @@ export function MobileNav() {
                   href={href}
                   aria-current={active ? 'page' : undefined}
                   onClick={() => setOpen(false)}
+                  style={enter(index, 40)}
                   className={cn(
-                    'border-b border-ink-100 py-4 text-base transition-colors',
-                    active ? 'text-brand-600' : 'text-ink-700',
+                    'animate-fade-up border-b border-ink-100 py-4 text-base transition-colors dark:border-white/10',
+                    active
+                      ? 'text-brand-600 dark:text-brand-300'
+                      : 'text-ink-700 dark:text-ink-200',
                   )}
                 >
                   {t(labelKey)}
                 </Link>
               )
             })}
-
-            <div className="mt-6">
-              <LocaleSwitcher />
-            </div>
           </nav>
         </div>
       )}
