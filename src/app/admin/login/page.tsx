@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { redirect } from 'next/navigation'
+import { ArrowLeft } from 'lucide-react'
 import { Logo } from '@/components/ui/Logo'
 import { isAdmin } from '@/lib/admin/session'
 import { LoginForm } from './LoginForm'
@@ -19,7 +21,10 @@ export default async function AdminLoginPage({
     <main className="flex flex-1 items-center justify-center px-4 py-16">
       <div className="w-full max-w-sm">
         <div className="flex justify-center">
-          <Logo />
+          {/* Loqo da sayta qayıdır — panel layout-undakı davranışla eynidir. */}
+          <Link href="/">
+            <Logo />
+          </Link>
         </div>
 
         <div className="mt-8 rounded-card border border-ink-100 bg-white p-6 shadow-sm shadow-ink-900/5 sm:p-8">
@@ -30,6 +35,16 @@ export default async function AdminLoginPage({
 
           <LoginForm from={typeof from === 'string' ? from : ''} />
         </div>
+
+        <p className="mt-6 text-center">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-1.5 text-sm text-ink-500 transition-colors hover:text-brand-600"
+          >
+            <ArrowLeft className="size-4" aria-hidden />
+            Ana səhifəyə qayıt
+          </Link>
+        </p>
       </div>
     </main>
   )
