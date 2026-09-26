@@ -2,6 +2,7 @@
 
 import { useActionState } from 'react'
 import { LoaderCircle } from 'lucide-react'
+import { PasswordInput } from '@/components/ui/PasswordInput'
 import { login } from '../actions'
 
 const INPUT_CLASS =
@@ -30,19 +31,12 @@ export function LoginForm({ from }: { from: string }) {
         />
       </div>
 
-      <div>
-        <label htmlFor="password" className="text-sm font-medium text-ink-700">
-          Parol
-        </label>
-        <input
-          id="password"
-          name="password"
-          type="password"
-          autoComplete="current-password"
-          required
-          className={INPUT_CLASS}
-        />
-      </div>
+      <PasswordInput
+        name="password"
+        label="Parol"
+        autoComplete="current-password"
+        required
+      />
 
       {state?.error && (
         <p
