@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ExternalLink, LogOut } from 'lucide-react'
+import { ExternalLink, LogOut, Users } from 'lucide-react'
 import { Logo } from '@/components/ui/Logo'
 import { verifyAdmin } from '@/lib/admin/session'
 import { logout } from '../actions'
@@ -27,6 +27,14 @@ export default async function AdminPanelLayout({
           </Link>
 
           <div className="flex items-center gap-1">
+            <Link
+              href="/admin/adminler"
+              className="inline-flex items-center gap-1.5 rounded-full px-3 py-2 text-sm text-ink-600 transition-colors hover:bg-brand-50 hover:text-brand-700"
+            >
+              <Users className="size-4" aria-hidden />
+              Adminlər
+            </Link>
+
             <Link
               href="/"
               className="hidden items-center gap-1.5 rounded-full px-3 py-2 text-sm text-ink-600 transition-colors hover:text-brand-600 sm:inline-flex"

@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "admin:hash": "node scripts/admin-password-hash.mjs",
-    "seed:blog": "node --env-file=.env scripts/seed-blog.mjs"
+    "seed:blog": "node --env-file=.env scripts/seed-blog.mjs",
+    "admin:add": "node --env-file=.env scripts/admin-add.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.47.0",

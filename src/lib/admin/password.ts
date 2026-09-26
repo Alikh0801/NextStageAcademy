@@ -1,5 +1,5 @@
 import 'server-only'
-import { createHash, scrypt, timingSafeEqual } from 'node:crypto'
+import { createHash, randomBytes, scrypt, timingSafeEqual } from 'node:crypto'
 
 /** `scripts/admin-password-hash.mjs` ilə eyni parametrlər olmalıdır. */
 const KEY_LENGTH = 64
@@ -26,4 +26,11 @@ export async function verifyPassword(
 export function safeEqual(a: string, b: string): boolean {
   const digest = (value: string) => createHash('sha256').update(value).digest()
   return timingSafeEqual(digest(a), digest(b))
+}
+
+/** Yeni admin yaradarkən və parol dəyişəndə işlənir. */
+export async function hashPassword(password: string): Promise<string> {
+  const salt = randomBytes(16)
+  const hash = await scryptAsync(password, salt)
+  return `${salt.toString('hex')}:${hash.toString('hex')}`
 }

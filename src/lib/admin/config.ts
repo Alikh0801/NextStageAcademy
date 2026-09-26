@@ -1,25 +1,13 @@
 /**
- * Admin paneli üçün yeganə hesab env dəyişənlərindən oxunur — bazada istifadəçi
- * cədvəli yoxdur. Bu fayl proxy-də də işlədiyi üçün `server-only` deyil.
+ * Admin hesabları artıq bazadadır (`Admin` modeli) — burada yalnız sessiya
+ * imzasının açarı qalır. Bu fayl proxy-də də işlədiyi üçün `server-only`
+ * deyil və heç bir baza sorğusu etmir.
  */
-export interface AdminConfig {
-  email: string
-  /** `salt:hash` (hex) — `npm run admin:hash` ilə yaradılır. */
-  passwordHash: string
-  sessionSecret: string
-}
+const MIN_SECRET_LENGTH = 32
 
-const PASSWORD_HASH_PATTERN = /^[0-9a-f]{32}:[0-9a-f]{128}$/
-
-/** Dəyərlərdən biri yoxdursa və ya formatı səhvdirsə `null` qaytarır. */
-export function getAdminConfig(): AdminConfig | null {
-  const email = process.env.ADMIN_EMAIL?.trim().toLowerCase()
-  const passwordHash = process.env.ADMIN_PASSWORD_HASH?.trim()
-  const sessionSecret = process.env.ADMIN_SESSION_SECRET
-
-  if (!email || !passwordHash || !sessionSecret) return null
-  if (!PASSWORD_HASH_PATTERN.test(passwordHash)) return null
-  if (sessionSecret.length < 32) return null
-
-  return { email, passwordHash, sessionSecret }
+/** Təyin edilməyibsə və ya qısadırsa `null` qaytarır — giriş bağlanır. */
+export function getSessionSecret(): string | null {
+  const secret = process.env.ADMIN_SESSION_SECRET
+  if (!secret || secret.length < MIN_SECRET_LENGTH) return null
+  return secret
 }
