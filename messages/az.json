@@ -41,7 +41,37 @@
     "levelADVANCED": "Qabaqcıl",
     "startDate": "Başlama tarixi",
     "instructor": "Təlimçi",
-    "enroll": "Müraciət et"
+    "enroll": "Müraciət et",
+    "office": {
+      "eyebrow": "Ofis proqramları",
+      "title": "Sizə Uyğun Təlim Proqramlarını Birlikdə Müəyyən Edək",
+      "listTitle": "Biz Sizə Bu Mövzularda Kömək Edə Bilərik:",
+      "items": [
+        "Microsoft Excel üzrə başlanğıc, orta və qabaqcıl səviyyə təlimləri",
+        "Microsoft Word, PowerPoint və digər Office proqramları üzrə təlimlər",
+        "Fərdi və korporativ formatda praktiki təlim imkanları",
+        "İş prosesində Office proqramlarından effektiv istifadə bacarıqlarının inkişafı"
+      ],
+      "closing": "Təlim ehtiyacınızı müəyyənləşdirin, uyğun proqramı birlikdə seçək və praktiki bacarıqlarınızı inkişaf etdirək.",
+      "whatsapp": "Salam! Ofis proqramları üzrə təlimlər haqqında məlumat almaq istəyirəm.",
+      "label": "Ofis proqramları"
+    },
+    "mose": {
+      "eyebrow": "Beynəlxalq sertifikat",
+      "title": "MOSE Təlimləri",
+      "subtitle": "Excel bacarıqlarınızı sertifikatlaşdırın.",
+      "text": "MOSE təlimləri ilə Microsoft Excel biliklərinizi inkişaf etdirin, praktiki bacarıqlarınızı gücləndirin və beynəlxalq sertifikat imtahanına hazırlaşın.",
+      "items": [
+        "Praktiki təlimlər",
+        "İmtahan hazırlığı",
+        "Peşəkar Excel bacarıqları",
+        "Beynəlxalq sertifikat imkanları",
+        "Onlayn təlim formatı"
+      ],
+      "closing": "Bacarıqlarınızı təsdiqləyin. Karyeranıza dəyər qatın.",
+      "whatsapp": "Salam! MOSE təlimi haqqında məlumat almaq istəyirəm.",
+      "label": "MOSE Təlimləri"
+    }
   },
   "Enrollment": {
     "title": "Təlimə müraciət",

@@ -4,7 +4,6 @@ import { getTranslations, setRequestLocale } from 'next-intl/server'
 import {
   ArrowRight,
   Award,
-  CircleCheck,
   Compass,
   FileUser,
   Fingerprint,
@@ -15,6 +14,7 @@ import {
   UserRoundCheck,
 } from 'lucide-react'
 import { PageHero } from '@/components/sections/PageHero'
+import { Checklist } from '@/components/ui/Checklist'
 import { WhatsAppIcon } from '@/components/ui/icons/WhatsAppIcon'
 import { CARD_HOVER, reveal } from '@/lib/motion'
 import { CONTACT, whatsappHref } from '@/lib/site'
@@ -331,21 +331,5 @@ function ListTitle({ children }: { children: ReactNode }) {
     <h3 className="mb-4 mt-8 font-sans text-base font-semibold tracking-normal text-ink-900 dark:text-white">
       {children}
     </h3>
-  )
-}
-
-function Checklist({ items, columns = false }: { items: string[]; columns?: boolean }) {
-  return (
-    <ul className={cn('grid gap-3', columns && 'sm:grid-cols-2 sm:gap-x-6')}>
-      {items.map((item) => (
-        <li key={item} className="flex gap-3 text-ink-700 dark:text-ink-200">
-          <CircleCheck
-            className="mt-0.5 size-5 shrink-0 text-brand-500 dark:text-brand-300"
-            aria-hidden
-          />
-          <span className="leading-relaxed">{item}</span>
-        </li>
-      ))}
-    </ul>
   )
 }

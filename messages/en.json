@@ -41,7 +41,37 @@
     "levelADVANCED": "Advanced",
     "startDate": "Start date",
     "instructor": "Instructor",
-    "enroll": "Apply now"
+    "enroll": "Apply now",
+    "office": {
+      "eyebrow": "Office applications",
+      "title": "Let’s Find the Right Training Programme for You Together",
+      "listTitle": "We Can Help You With:",
+      "items": [
+        "Microsoft Excel training at beginner, intermediate and advanced levels",
+        "Training in Microsoft Word, PowerPoint and other Office applications",
+        "Hands-on training for individuals and companies",
+        "Building the skills to use Office applications effectively at work"
+      ],
+      "closing": "Tell us what you need to learn — we’ll choose the right programme together and build your practical skills.",
+      "whatsapp": "Hello! I’d like to learn more about your Office applications training.",
+      "label": "Office applications"
+    },
+    "mose": {
+      "eyebrow": "International certification",
+      "title": "MOSE Training",
+      "subtitle": "Get your Excel skills certified.",
+      "text": "With MOSE training, develop your Microsoft Excel knowledge, strengthen your practical skills and prepare for the international certification exam.",
+      "items": [
+        "Hands-on training",
+        "Exam preparation",
+        "Professional Excel skills",
+        "International certification opportunities",
+        "Online training format"
+      ],
+      "closing": "Validate your skills. Add value to your career.",
+      "whatsapp": "Hello! I’d like to learn more about the MOSE training.",
+      "label": "MOSE Training"
+    }
   },
   "Enrollment": {
     "title": "Course application",

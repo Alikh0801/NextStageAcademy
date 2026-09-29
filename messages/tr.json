@@ -41,7 +41,37 @@
     "levelADVANCED": "İleri",
     "startDate": "Başlangıç tarihi",
     "instructor": "Eğitmen",
-    "enroll": "Başvur"
+    "enroll": "Başvur",
+    "office": {
+      "eyebrow": "Ofis programları",
+      "title": "Size Uygun Eğitim Programlarını Birlikte Belirleyelim",
+      "listTitle": "Size Bu Konularda Yardımcı Olabiliriz:",
+      "items": [
+        "Microsoft Excel başlangıç, orta ve ileri seviye eğitimleri",
+        "Microsoft Word, PowerPoint ve diğer Office programları eğitimleri",
+        "Bireysel ve kurumsal formatta uygulamalı eğitim imkânları",
+        "İş süreçlerinde Office programlarını etkin kullanma becerilerinin geliştirilmesi"
+      ],
+      "closing": "Eğitim ihtiyacınızı belirleyin, uygun programı birlikte seçelim ve pratik becerilerinizi geliştirelim.",
+      "whatsapp": "Merhaba! Ofis programları eğitimleri hakkında bilgi almak istiyorum.",
+      "label": "Ofis programları"
+    },
+    "mose": {
+      "eyebrow": "Uluslararası sertifika",
+      "title": "MOSE Eğitimleri",
+      "subtitle": "Excel becerilerinizi sertifikalandırın.",
+      "text": "MOSE eğitimleriyle Microsoft Excel bilginizi geliştirin, pratik becerilerinizi güçlendirin ve uluslararası sertifika sınavına hazırlanın.",
+      "items": [
+        "Uygulamalı eğitimler",
+        "Sınav hazırlığı",
+        "Profesyonel Excel becerileri",
+        "Uluslararası sertifika imkânları",
+        "Online eğitim formatı"
+      ],
+      "closing": "Becerilerinizi belgeleyin. Kariyerinize değer katın.",
+      "whatsapp": "Merhaba! MOSE eğitimi hakkında bilgi almak istiyorum.",
+      "label": "MOSE Eğitimleri"
+    }
   },
   "Enrollment": {
     "title": "Eğitime başvuru",
