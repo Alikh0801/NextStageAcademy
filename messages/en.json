@@ -231,7 +231,8 @@
     "backHome": "Back to home",
     "required": "This field is required",
     "invalidEmail": "Invalid email address",
-    "comingSoon": "This page is under construction."
+    "comingSoon": "This page is under construction.",
+    "backToTop": "Back to top"
   },
   "Categories": {
     "hrTitle": "HR",

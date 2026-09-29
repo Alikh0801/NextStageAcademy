@@ -231,7 +231,8 @@
     "backHome": "Ana sayfaya dön",
     "required": "Bu alan zorunludur",
     "invalidEmail": "E-posta adresi geçersiz",
-    "comingSoon": "Bu sayfa hazırlanıyor."
+    "comingSoon": "Bu sayfa hazırlanıyor.",
+    "backToTop": "Yukarı çık"
   },
   "Categories": {
     "hrTitle": "İK",

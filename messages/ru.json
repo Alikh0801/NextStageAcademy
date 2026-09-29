@@ -231,7 +231,8 @@
     "backHome": "На главную",
     "required": "Поле обязательно для заполнения",
     "invalidEmail": "Неверный адрес эл. почты",
-    "comingSoon": "Эта страница в разработке."
+    "comingSoon": "Эта страница в разработке.",
+    "backToTop": "Наверх"
   },
   "Categories": {
     "hrTitle": "HR",

@@ -231,7 +231,8 @@
     "backHome": "Ana səhifəyə qayıt",
     "required": "Bu xana doldurulmalıdır",
     "invalidEmail": "E-poçt ünvanı düzgün deyil",
-    "comingSoon": "Bu səhifə hazırlanır."
+    "comingSoon": "Bu səhifə hazırlanır.",
+    "backToTop": "Yuxarı qalx"
   },
   "Categories": {
     "hrTitle": "HR",

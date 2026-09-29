@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
+import { BackToTop } from '@/components/layout/BackToTop'
 import { Footer } from '@/components/layout/Footer'
 import { Header } from '@/components/layout/Header'
 import { MotionEffects } from '@/components/layout/MotionEffects'
@@ -60,6 +61,7 @@ export default async function LocaleLayout({
           {children}
           <Footer />
           <MotionEffects />
+          <BackToTop />
         </NextIntlClientProvider>
       </body>
     </html>
