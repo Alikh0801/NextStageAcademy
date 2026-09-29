@@ -41,25 +41,35 @@ export default async function CoursesPage({
   const t = await getTranslations('Courses')
 
   return (
-    <main className="flex-1">
-      <section className="relative isolate overflow-hidden py-20 text-center lg:py-28">
-        <Image
-          src="/courses/hero.jpg"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="-z-10 animate-hero-zoom object-cover dark:hidden"
-        />
-        <Image
-          src="/courses/hero-dark.jpg"
-          alt=""
-          fill
-          loading="eager"
-          sizes="100vw"
-          className="-z-10 hidden animate-hero-zoom object-cover dark:block"
-        />
+    <main className="relative isolate flex-1">
+      {/*
+        Səhifənin ümumi fonu. Şəkli bütün səhifəyə dartsaq, uzun səhifədə
+        bir neçə dəfə böyüyüb bulanıqlaşardı. Ona görə o, ekran boyda
+        qalır və `sticky` ilə yerində durur — məzmun üstündən sürüşür.
+        Konteyner `main`-in ölçüsündədir, ona görə fon footer-ə düşmür.
+      */}
+      <div aria-hidden className="absolute inset-0 -z-10">
+        <div className="sticky top-0 h-lvh overflow-hidden">
+          <Image
+            src="/courses/hero.jpg"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="animate-hero-zoom object-cover dark:hidden"
+          />
+          <Image
+            src="/courses/hero-dark.jpg"
+            alt=""
+            fill
+            loading="eager"
+            sizes="100vw"
+            className="hidden animate-hero-zoom object-cover dark:block"
+          />
+        </div>
+      </div>
 
+      <section className="py-20 text-center lg:py-28">
         <div className="container-page">
           <h1 style={enter(0)} className="animate-fade-up text-4xl sm:text-5xl lg:text-6xl">
             {t('allTitle')}
@@ -86,7 +96,7 @@ export default async function CoursesPage({
         </div>
       </section>
 
-      <section className="bg-white py-16 lg:py-24 dark:bg-ink-950">
+      <section className="pb-16 lg:pb-24">
         <div className="container-page space-y-20 lg:space-y-28">
           {TRAININGS.map(({ id, key, image, columns }, index) => (
             <article
