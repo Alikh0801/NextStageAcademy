@@ -2,8 +2,10 @@ import { getTranslations } from 'next-intl/server'
 import { MapPin, Phone } from 'lucide-react'
 import { Link } from '@/i18n/navigation'
 import { Logo } from '@/components/ui/Logo'
+import { InstagramIcon } from '@/components/ui/icons/InstagramIcon'
+import { WhatsAppIcon } from '@/components/ui/icons/WhatsAppIcon'
 import { NAV_ITEMS } from '@/lib/nav'
-import { CONTACT, phoneHref } from '@/lib/site'
+import { CONTACT, instagramHandle, phoneHref, whatsappHref } from '@/lib/site'
 
 export async function Footer() {
   const [t, tNav, tMeta] = await Promise.all([
@@ -58,6 +60,34 @@ export async function Footer() {
                   >
                     <Phone className="size-4 shrink-0 text-brand-300" aria-hidden />
                     {CONTACT.phone}
+                  </a>
+                </li>
+              )}
+              {CONTACT.whatsapp && (
+                <li>
+                  <a
+                    href={whatsappHref(CONTACT.whatsapp)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`WhatsApp: ${CONTACT.whatsapp}`}
+                    className="flex items-center gap-3 transition-colors hover:text-white"
+                  >
+                    <WhatsAppIcon className="size-4 shrink-0 text-brand-300" />
+                    {CONTACT.whatsapp}
+                  </a>
+                </li>
+              )}
+              {CONTACT.instagram && (
+                <li>
+                  <a
+                    href={CONTACT.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Instagram: ${instagramHandle(CONTACT.instagram)}`}
+                    className="flex items-center gap-3 transition-colors hover:text-white"
+                  >
+                    <InstagramIcon className="size-4 shrink-0 text-brand-300" />
+                    {instagramHandle(CONTACT.instagram)}
                   </a>
                 </li>
               )}

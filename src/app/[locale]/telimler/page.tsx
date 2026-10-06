@@ -154,7 +154,7 @@ export default async function CoursesPage({
                 </p>
 
                 <a
-                  href={whatsappHref(CONTACT.phone, t(`${key}.whatsapp`))}
+                  href={whatsappHref(CONTACT.whatsapp, t(`${key}.whatsapp`))}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group/cta mt-8 inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r from-brand-500 to-brand-600 px-7 py-3.5 text-[15px] font-medium text-white shadow-md shadow-brand-600/25 transition-[translate,box-shadow] duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-brand-600/35"

@@ -1,12 +1,20 @@
 /**
- * Footer-dəki əlaqə məlumatları. Telefon hələlik şablon nömrədir — admin
- * panel hazır olanda bazaya köçürüləcək və oradan dəyişdiriləcək.
- * Boş qalanda footer-də göstərilmir.
+ * Əlaqə məlumatları. Telefon hələlik şablon nömrədir — admin panel hazır
+ * olanda bazaya köçürüləcək və oradan dəyişdiriləcək. Boş qalan sahə
+ * footer-də göstərilmir.
  */
 export const CONTACT = {
   /** Göründüyü kimi, məs. "+994 50 123 45 67". */
   phone: '+994 50 000 00 00',
+  /** Saytdakı bütün "Əlaqə saxla" / "Müraciət et" düymələri bu nömrəyə yazır. */
+  whatsapp: '+994 50 372 60 93',
+  instagram: 'https://www.instagram.com/nextstageacademyy',
 } as const
+
+/** Profil ünvanından "@ad" forması: footer-də göstərmək üçün. */
+export function instagramHandle(url: string): string {
+  return `@${new URL(url).pathname.replace(/\//g, '')}`
+}
 
 /** `tel:` linki üçün boşluqsuz forma. */
 export function phoneHref(phone: string): string {

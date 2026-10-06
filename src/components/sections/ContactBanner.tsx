@@ -31,7 +31,7 @@ export async function ContactBanner() {
           </div>
 
           <a
-            href={whatsappHref(CONTACT.phone)}
+            href={whatsappHref(CONTACT.whatsapp)}
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-brand-700 to-brand-800 px-7 py-3.5 text-[15px] font-medium text-white shadow-md shadow-brand-800/25 transition-[translate,box-shadow] duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-brand-800/35 dark:from-brand-500 dark:to-brand-600"

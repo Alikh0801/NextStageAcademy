@@ -112,7 +112,7 @@ export default async function AboutPage({
                 {tContact('bannerSubtitle')}
               </p>
               <a
-                href={whatsappHref(CONTACT.phone)}
+                href={whatsappHref(CONTACT.whatsapp)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group mt-6 inline-flex items-center gap-2 self-start rounded-full bg-white px-5 py-2.5 text-sm font-medium text-brand-700 transition-opacity hover:opacity-90 lg:mt-auto"

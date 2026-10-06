@@ -257,7 +257,7 @@ export default async function CareerPage({
           </ol>
 
           <a
-            href={whatsappHref(CONTACT.phone)}
+            href={whatsappHref(CONTACT.whatsapp)}
             target="_blank"
             rel="noopener noreferrer"
             {...reveal(journey.length + 2, 100)}
